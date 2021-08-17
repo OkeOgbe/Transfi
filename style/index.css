@@ -1,0 +1,364 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+:root {
+    --bgBlue: #F2FAFC;
+    --defaultBlue: #0096C7;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fffdfd;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border: none;
+}
+
+.hero {
+    background-color: var(--bgBlue);
+    min-height: 100vh;
+}
+
+.sectionText {
+    font-size: 0.9rem;
+}
+
+.sectionText--mid{
+    font-size: 1rem;
+}
+
+.sectionHead{
+    font-size: 1.5rem;
+}
+
+.sectionHeight{
+    min-height: 80vh;
+}
+
+.sectionHeight--mid{
+    min-height: 90vh;
+}
+
+.sectionHeight--short{
+    min-height: 50vh;
+}
+
+.fullHeight{
+    min-height: 100vh;
+}
+
+.nav__mobile{
+     display: none;
+     position: relative;
+     background-color: #fff;
+     padding: 1rem;
+     min-height: 50px;
+     transition: all 0.4s ease;
+}
+
+.nav__mobileMenu {
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    min-height: 100vh;
+    min-width: 100%;
+    transition: all 0.3s ease;
+    transform: scale(0);
+}
+
+.nav__mobileMenu.active {
+    transform: scale(1);
+}
+
+.menuIcon{
+    position: relative;
+    right: 20px;
+}
+
+.menuIcon p {
+        background-color: var(--defaultBlue);
+        width: 25px;
+        border-radius: 20px;
+        padding: 0.12rem;
+        transition: all 0.15s ease-in;
+        position: relative;
+        margin-bottom: 5px !important;
+    }
+
+    .menuIcon p:nth-child(2){
+        width: 50%;
+    }
+
+.close {
+    font-size: 30px;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+}
+
+
+.nav {
+    position: absolute;
+    padding: 1.5rem;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.navLinkHolder {
+    width: 60%;
+}
+
+.nav a {
+    color: #202020;
+}
+
+.spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alignOnly{
+    display: flex;
+    align-items: center;
+}
+
+.vAlign{
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textIsBlue{
+    color: #023E8A;
+}
+
+.textIsBold{
+    font-weight: bold;
+}
+
+.defaultBtn {
+    min-width: 150px;
+    background: var(--defaultBlue);
+    padding: 0.7rem 1rem;
+    text-align: center;
+    color: #ffff !important;
+    box-shadow: 0px 4px 8px 3px #0000001A;
+}
+
+.hero .textHolder{
+    padding: 1rem;
+}
+
+.hero .textHolder p{
+    line-height: 2em;
+}
+
+
+.mockup{
+    background-color: var(--bgBlue);
+}
+
+.mockup .bgImg{
+    position: absolute; 
+    right: 0;
+}
+
+.why .textHolder{
+    width: 60%;
+}
+
+.why__card{
+    padding: 1rem;
+}
+
+.why__card .icon{
+    box-shadow: 0px 4px 10px 3px #C4C4C433;
+width: 35px;
+height: 35px;
+border-radius: 50px;
+}
+
+.emailInput{
+    background-color: #E9E9E9B2;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.emailInput input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+}
+
+.emailInput .defaultBtn{
+    border-radius: 10px;
+}
+
+.countdown{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tokenomics{
+    background-image: url('/images/tokenBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 50px;
+}
+
+.dot.blue{
+    background-color: #03C5FF;
+}
+
+.dot.green{
+    background-color: #67FA97;
+}
+
+.dot.orange{
+    background-color: #FFCC3E;
+}
+
+.dot.pink{
+    background-color: #FF3E72;
+}
+
+.dot.d_orange{
+    background-color: #FF6B3E;
+}
+
+.dot.d_blue {
+    background-color: #3E72FF;
+}
+
+.stat .progress{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stat .progress.blue{
+    background: #B6ECFD;
+}
+
+.stat .progress.green{
+    background-color: #CFF9E3;
+}
+
+.stat .progress.orange{
+    background-color: #F5EECC;
+}
+
+.stat .progress.pink{
+    background-color: #F5D4E1;
+}
+
+.stat .progress.d_orange {
+    background-color: #F5D6CC;
+}
+
+.stat .progress.d_blue {
+    background-color: #C4D7FD;
+}
+
+
+.stat .progress__thumb{
+    border-radius: 50px;
+}
+
+.stat .progress__thumb.blue {
+    background-color: #03C5FF;
+        width: 20%;
+}
+
+.stat .progress__thumb.green{
+    background-color: #67FA97;
+        width: 60%;
+}
+
+.stat .progress__thumb.orange{
+    background-color: #FFCC3E;
+    width: 20%;
+}
+
+.stat .progress__thumb.pink{
+background-color: #FF3E72;
+width: 10%;
+}
+
+.stat .progress__thumb.d_orange{
+    background-color: #FF6B3E;
+    width: 20%;
+}
+
+.stat .progress__thumb.d_blue {
+    background-color: #3E72FF;
+    width: 25%;
+}
+
+
+.stat .textHolder{
+    width: 50%;
+    padding: 0 2rem;
+}
+
+
+@media (max-width: 760px) {
+    .nav{
+        display: none;
+    }
+
+    .nav__mobile{
+        display: flex;
+    }
+
+    .sectionHeight--mid{
+        min-height: 85vh;
+    }
+    
+    .hero .sectionHeight--mid{
+        min-height: 50vh;
+    }
+
+    .sectionHeight{
+        min-height: 50vh;
+    }
+
+.why .textHolder {
+    width: 100%;
+}
+
+ .stat .textHolder {
+    width: 90%;
+margin-top: 1rem;
+}
+
+}
