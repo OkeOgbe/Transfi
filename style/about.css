@@ -1,0 +1,61 @@
+@import url( './index.css');
+
+.about .imgHolder {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.about .imgHolder img {
+    width: 90%;
+}
+
+.team__card {
+    height: 240px;
+    position: relative;
+    width: 260px;
+}
+
+.team__card img {
+    position: absolute;
+    bottom: 0;
+}
+
+.team__card.dark {
+    background-color: #023E8A;
+}
+
+.team__card.light {
+    background-color: var(--defaultBlue);
+}
+
+.openings .position {
+    padding: 0.6rem;
+    background-color: #F2FAFC;
+    box-shadow:0px 3px 11px 0px #C4C4C44D;
+    border-radius: 30px;
+    color: #023E8AC9;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.position:hover{
+    background-color: #023E8AC9;
+    color: #F2FAFC;
+}
+
+
+@media (max-width: 768px) {
+    .about .imgHolder img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about .sectionHeight--mid {
+        min-height: 50vh;
+    }
+
+    .team__card{
+        margin: 0 auto;
+        width: 100%;
+    }
+}

@@ -20,7 +20,7 @@
                             <img src="/images/logo.png" alt=""/>
                         </div>
                         <div class="sectionText navLinkHolder spaceBetween ml-5">
-                            <a href="#">About Us</a>
+                            <a href="/about.html">About Us</a>
                             <a href="#">Affiliates</a>
                             <a href="#">Contact us</a>
                         </div>
@@ -33,17 +33,50 @@
                 </div>
             </nav>
 
-            <div class="nav__mobile spaceBetween container">
+            <div class="nav__mobile container">
                 <div class="">
                     <img src="/images/logo.png" alt="">
                 </div>
-                <div class="menuIcon">
+                <div class="menuIcon" id='menuIcon'>
                     <p></p>
                     <p></p>
                 </div>
             </div>
 
-       
+            <div class="nav__mobileMenu">
+                <div class="sectionHeight--mid">
+                    <i class="fas fa-times close"></i>
+                    <div class="sectionHeight--mid alignOnly">
+
+                        <div class="w-100 vAlign sectionText--mid">
+                            <div class="pt-3 pb-3">
+                                <a href="/index.html">Home</a>
+                            </div>
+
+                            <div class="pt-3 pb-3">
+                                <a href="/about.html">About Us</a>
+                            </div>
+
+                            <div class="pt-3 pb-3">
+                                <a href="#">Affiliates</a>
+                            </div>
+
+                            <div class="pt-3 pb-3">
+                                <a href="#">Contact us</a>
+                            </div>
+
+                            <div class="pt-3 pb-3">
+                                <a href="#">Login</a>
+                            </div>
+
+                            <div class="pt-3 pb-3">
+                                <a href="#" class="defaultBtn">Join Transfi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section class="hero">
                 <div class="container">
                     <div class="row">
@@ -98,7 +131,7 @@
                                 <img src="/images/token.png" class="w-100" alt="">
                             </div>
 
-                            <div class="mt-3 countdown">
+                            <div class="mt-4 countdown">
                                 <div class="alignOnly ">
                                     <img src="/images/count.png" alt="">
                                     <h2 class="sectionText textIsBlue mb-0 ml-3">Token Countdown</h2>
@@ -283,7 +316,6 @@
                 </div>
             </section>
 
-
             <section class="container sectionHeight--short">
                 <div class="vAlign">
                     <h2 class="sectionHead textIsBlue ">Trusted partners worldwide</h2>
@@ -435,7 +467,7 @@
                             <div class="emailInput">
                                 <form class="alignOnly">
                                     <input type="email" placeholder="E-mail address">
-                                    <button class="defaultBtn">Subscribe</button>
+                                    <button class="defaultBtn vAlign">Subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -443,8 +475,56 @@
                 </div>
             </div>
 
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 alignOnly sectionHeight--short">
+                            <div class="logo">
+                                <img src="/images/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 sectionHeight--short alignOnly">
+                            <div class="row w-100">
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Transfi Products</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Transfi Token</li>
+                                        <li class="pt-2 pb-2">Transfi Wallet</li>
+                                        <li class="pt-2 pb-2">Transfi App</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Company</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Login</li>
+                                        <li class="pt-2 pb-2">About us</li>
+                                        <li class="pt-2 pb-2">Affliates</li>
+                                        <li class="pt-2 pb-2">Careers</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Follow us</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Twitter</li>
+                                        <li class="pt-2 pb-2">Telegram</li>
+                                        <li class="pt-2 pb-2">Facebook</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-        <script src='./jquery.min.js'></script>
+        <script src='./assets/js/jquery.min.js'></script>
+        <script src='./js/index.js'></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
     </body>
 </html>
