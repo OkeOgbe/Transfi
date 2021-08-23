@@ -8,27 +8,30 @@
         <link
             rel="stylesheet"
             href="/assets/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="/style/index.css">
     </head>
     <body>
         <div class="">
 
-            <nav class="nav container">
-                <div class="w-100 spaceBetween">
-                    <div class="alignOnly w-50">
-                        <div class="logo">
-                            <img src="/images/logo.png" alt=""/>
+            <nav class="nav ease">
+                <div class="container">
+                    <div class="w-100 spaceBetween">
+                        <div class="alignOnly w-50">
+                            <a href='/index.html' class="logo">
+                                <img src="/images/logo.png" alt=""/>
+                            </a>
+                            <div class="sectionText navLinkHolder spaceBetween ml-5">
+                                <a href="/about.html">About Us</a>
+                                <a href="#">Affiliates</a>
+                                <a href="/contact.html">Contact us</a>
+                            </div>
                         </div>
-                        <div class="sectionText navLinkHolder spaceBetween ml-5">
-                            <a href="/about.html">About Us</a>
-                            <a href="#">Affiliates</a>
-                            <a href="#">Contact us</a>
-                        </div>
-                    </div>
 
-                    <div class="spaceBetween sectionText">
-                        <a href="#" class="mr-5">Login</a>
-                        <a href="#" class="defaultBtn ">Join Transfi</a>
+                        <div class="spaceBetween sectionText">
+                            <a href="#" class="mr-5">Login</a>
+                            <a href="#" class="defaultBtn ">Join Transfi</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -125,13 +128,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 alignOnly sectionHeight--mid">
+                    <div class="col-lg-6 alignOnly sectionHeight pt-3">
                         <div class="w-100">
-                            <div class="imgHolder center">
+                            <div class="imgHolder token center"  data-aos="fade-up">
                                 <img src="/images/token.png" class="w-100" alt="">
                             </div>
 
-                            <div class="mt-4 countdown">
+                            <div class="countdown"  data-aos="fade-up" data-aos-delay='200'>
                                 <div class="alignOnly ">
                                     <img src="/images/count.png" alt="">
                                     <h2 class="sectionText textIsBlue mb-0 ml-3">Token Countdown</h2>
@@ -293,10 +296,10 @@
                 </div>
             </div>
 
-            <section class="container sectionHeight--mid alignOnly">
+            <section class="container borderless sectionHeight--mid alignOnly">
                 <div class="row mt-4">
                     <div class="col-lg-6 sectionHeight alignOnly">
-                        <div class="imgHolder center">
+                        <div class="imgHolder center" data-aos='fade-up'>
                             <img src="/images/globe.png" class='w-100' alt="">
                         </div>
                     </div>
@@ -345,8 +348,25 @@
                             </div>
                         </div>
                         <div class="col-lg-6 sectionHeight alignOnly">
-                            <div class="imgHolder center">
-                                <img src="/images/dashboard.png" class="w-100" alt="">
+
+                            <div class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="imgHolder center">
+                                            <img src="/images/dashboard.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="imgHolder center">
+                                            <img src="/images/cards.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="imgHolder center">
+                                            <img src="/images/dashboard.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -356,7 +376,7 @@
             <section class="container sectionHeight--mid alignOnly">
                 <div class="w-100">
                     <div class="row">
-                        <div class="col-lg-6 alignOnly">
+                        <div class="col-lg-6 alignOnly sectionHeight">
 
                             <div class="textHolder sectionText">
                                 <p class="">
@@ -381,8 +401,8 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="imgHolder">
+                        <div class="col-lg-6 sectionHeight alignOnly">
+                            <div class="imgHolder" data-aos="fade-up">
                                 <img src="/images/child.png" class='w-100' alt="">
                             </div>
                         </div>
@@ -392,19 +412,21 @@
 
             <section class="container why sectionHeight--mid alignOnly pt-5 pb-5">
                 <div>
-                    <div class="textHolder">
-                        <h3 class="sectionText">The real question should be</h3>
-                        <h2 class="sectionHead textIsBlue textIsBold">Why Not Transfi?</h2>
+                    <div class="textHolder sectionHeight--short alignOnly">
+                        <div class="w-100">
+                            <h3 class="sectionText">The real question should be</h3>
+                            <h2 class="sectionHead textIsBlue textIsBold">Why Not Transfi?</h2>
 
-                        <p class="sectionText mt-4 textIsGray">
-                            The Transfi merchant’s dashboard has everything you need to see at the click of
-                            a button. Your satisfaction is our priority: check order details, view
-                            transactions, manage refunds and settlements.
-                        </p>
+                            <p class="sectionText mt-4 textIsGray">
+                                The Transfi merchant’s dashboard has everything you need to see at the click of
+                                a button. Your satisfaction is our priority: check order details, view
+                                transactions, manage refunds and settlements.
+                            </p>
 
+                        </div>
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row">
                         <div class="col-lg-4 mt-4">
                             <div class="why__card">
                                 <div class="icon textIsBlue center mb-3">
@@ -460,10 +482,10 @@
                         <div class="col-lg-6">
                             <div class="textHolder">
                                 <h2 class="sectionHead textIsBlue textIsBold">Get TrustToken news to your inbox</h2>
-                                <p class="sectionText--mid textIsGray">Stay up to date with our Newsletter</p>
+                                <p class="sectionText--mid textIsGray mt-2">Stay up to date with our Newsletter</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mt-3">
                             <div class="emailInput">
                                 <form class="alignOnly">
                                     <input type="email" placeholder="E-mail address">
@@ -524,6 +546,12 @@
 
         </div>
         <script src='./assets/js/jquery.min.js'></script>
+        <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src='./js/index.js'></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
     </body>

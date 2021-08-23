@@ -31,19 +31,29 @@
 .openings .position {
     padding: 0.6rem;
     background-color: #F2FAFC;
-    box-shadow:0px 3px 11px 0px #C4C4C44D;
+    box-shadow: 0 3px 11px 0 #C4C4C44D;
     border-radius: 30px;
     color: #023E8AC9;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
 }
-
-.position:hover{
+.position:hover {
     background-color: #023E8AC9;
     color: #F2FAFC;
 }
 
+.roadmap {
+    background-image: url('/images/tokenBg.png');
+}
 
+.roadmap .contentHolder {
+    width: 90%;
+}
+
+.date {
+    border-right: 3px solid #023E8A;
+    padding: 0 2rem;
+}
 @media (max-width: 768px) {
     .about .imgHolder img {
         width: 100%;
@@ -51,11 +61,33 @@
     }
 
     .about .sectionHeight--mid {
-        min-height: 50vh;
+        min-height: 45vh;
     }
 
-    .team__card{
+    .team__card {
         margin: 0 auto;
         width: 100%;
     }
+
+    .openings .imgHolder {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .date {
+        text-align: left !important;
+        border: none;
+        padding: 0 1rem;
+        border-left: 3px solid #023E8A;
+    }
+
+    .roadmap{
+        padding: 2rem 1rem;
+    }
+
+    .roadmap .contentHolder {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
 }

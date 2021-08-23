@@ -23,6 +23,29 @@ button {
     border: none;
 }
 
+.ease{
+    transition: all .5s ease !important;
+}
+
+.carousel-item{
+    padding: 2rem;
+}
+
+.textIsGray{
+    color: rgba(32, 32, 32, 0.7);
+}
+
+input,
+textarea{
+    outline: none;
+    border: none;
+    background-color: #F8FAFD;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    color: #20202080;
+}
+
 .hero {
     background-color: var(--bgBlue);
     min-height: 100vh;
@@ -40,6 +63,10 @@ button {
     font-size: 1.5rem;
 }
 
+.sectionHead--big{
+    font-size: 2rem;
+}
+
 .sectionHeight {
     min-height: 80vh;
 }
@@ -54,6 +81,14 @@ button {
 
 .fullHeight {
     min-height: 100vh;
+}
+
+.nav.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px 0px #eae1e17a;
 }
 
 .nav__mobile {
@@ -110,7 +145,7 @@ button {
 
 .nav {
     position: absolute;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
     right: 0;
     left: 0;    
@@ -247,6 +282,14 @@ ul{
     margin: 0 auto;
 }
 
+.borderless .imgHolder{
+    padding: 1.5rem;
+}
+
+.token{
+    padding: 3rem;
+}
+
 .tokenomics {
     background-image: url('/images/tokenBg.png');
     background-position: center;
@@ -361,6 +404,10 @@ ul{
 }
 @media (max-width: 768px) {
 
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
     .defaultBtn {
         padding: 1rem 3rem;
     }
@@ -409,5 +456,13 @@ ul{
     footer .sectionHeight--short{
         min-height: 30vh;
     }
+
+    .carousel-item {
+        padding: 1rem;
+    }
+
+.token {
+    padding: 1rem;
+}
 
 }

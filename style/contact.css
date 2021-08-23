@@ -1,0 +1,27 @@
+@import url('./index.css');
+
+.contact  .textHolder{
+    width: 80%;
+}
+
+.textHolder h2{
+    border-left: 9px solid #023E8A;
+    padding: 0 .6rem;
+}
+
+.formHolder{
+    box-shadow: 0px 1px 15px 0px #dde5ec8a;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .contact .sectionHeight{
+        min-height: 35vh;
+    }
+
+    .contact .textHolder {
+        width: 90%;
+    }
+}

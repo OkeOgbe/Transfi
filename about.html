@@ -8,6 +8,7 @@
         <link
             rel="stylesheet"
             href="/assets/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="/style/about.css">
     </head>
     <body>
@@ -15,22 +16,24 @@
         <div>
 
             <!----------------- Nav ------------>
-            <nav class="nav container">
-                <div class="w-100 spaceBetween">
-                    <div class="alignOnly w-50">
-                        <a href='/index.html' class="logo">
-                            <img src="/images/logo.png" alt=""/>
-                        </a>
-                        <div class="sectionText navLinkHolder spaceBetween ml-5">
-                            <a href="/about.html">About Us</a>
-                            <a href="#">Affiliates</a>
-                            <a href="#">Contact us</a>
+            <nav class="nav ease">
+                <div class="container">
+                    <div class="w-100 spaceBetween">
+                        <div class="alignOnly w-50">
+                            <a href='/index.html' class="logo">
+                                <img src="/images/logo.png" alt=""/>
+                            </a>
+                            <div class="sectionText navLinkHolder spaceBetween ml-5">
+                                <a href="/about.html">About Us</a>
+                                <a href="#">Affiliates</a>
+                                <a href="/contact.html">Contact us</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="spaceBetween sectionText">
-                        <a href="#" class="mr-5">Login</a>
-                        <a href="#" class="defaultBtn ">Join Transfi</a>
+                        <div class="spaceBetween sectionText">
+                            <a href="#" class="mr-5">Login</a>
+                            <a href="#" class="defaultBtn ">Join Transfi</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -101,9 +104,9 @@
                 </section>
 
                 <section class="container sectionHeight--mid alignOnly">
-                    <div class="row w-100">
+                    <div class="row reverse w-100">
                         <div class="col-lg-7 lAlign sectionHeight--mid alignOnly">
-                            <div class="imgHolder">
+                            <div class="imgHolder" data-aos='fade-up'>
                                 <img src="/images/meeting.png" alt="">
                             </div>
                         </div>
@@ -134,7 +137,7 @@
                         </div>
 
                         <div class="col-lg-7 rAlign sectionHeight--mid alignOnly">
-                            <div class="imgHolder">
+                            <div class="imgHolder" data-aos='fade-up'>
                                 <img src="/images/brainstorm.png" alt="">
                             </div>
                         </div>
@@ -142,49 +145,49 @@
                     </div>
                 </section>
 
-                <section class='sectionHeight--mid alignOnly container'>
+                <section class='fullHeight mt-5 alignOnly container'>
                     <div class="w-100">
                         <h2 class="vAlign textIsBold textIsBlue sectionHead">Now we’re here, Meet our Team</h2>
 
-                        <div class="row pt-4 pb-4">
-                            <div class="col-lg-3 mt-4">
+                        <div class="row pt-2 pb-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up">
                                 <div class="team__card dark">
                                     <img src="/images/team1.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 mt-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay='200'>
                                 <div class="team__card light">
                                     <img src="/images/team2.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 mt-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay='300'>
                                 <div class="team__card dark">
                                     <img src="/images/team3.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 mt-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay='400'>
                                 <div class="team__card light">
                                     <img src="/images/team5.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 mt-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay='450'>
                                 <div class="team__card dark">
                                     <img src="/images/team4.png" alt="">
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 mt-4">
+                            <div class="col-lg-3 mt-4" data-aos="fade-up" data-aos-delay='500'>
                                 <div class="team__card light">
                                     <img src="/images/team6.png" alt="">
                                 </div>
                             </div>
 
                             <div class="col-lg-3 mt-4">
-                                <div class="team__card dark">
+                                <div class="team__card dark" data-aos="fade-up" data-aos-delay='600'>
                                     <img src="/images/team7.png" alt="">
                                 </div>
                             </div>
@@ -193,8 +196,36 @@
                     </div>
                 </section>
 
-                <!-- <section class="openings sectionHeight--mid alignOnly container">
-                    <div class="row w-100">
+                <section class="sectionHeight--mid roadmap alignOnly">
+                    <div class="container w-100">
+                        <h2 class="sectionHead textIsBlue">Roadmap Guide</h2>
+                        <p class="sectionText">Upcoming Milestones</p>
+
+                        <div class="sectionHeight--short alignOnly">
+                            <div class="row">
+                                <div class="col-lg-3 mt-4">
+                                    <h2 class="sectionHead--big textIsBold rAlign date">Dec 4
+                                        <br/>
+                                        2021</h2>
+                                </div>
+                                <div class="col-lg-9 mt-4">
+                                    <div class="contentHolder">
+                                        <h2 class="sectionText textIsBlue">Private Sale of Transfi Tokens</h2>
+                                        <p class="sectionText-mid mt-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu mi, nunc, eu
+                                            magna. Vivamus auctor quam erat enim. Eget commodo a sapien morbi. Pulvinar
+                                            risus et a bibendum maecenas imperdiet aenean at. Faucibus ante ultricies magna
+                                            diam at ac ut sit. Quam odio lacus, morbi lorem tellus tellus ultrices odio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="openings sectionHeight alignOnly container">
+                    <div class="row">
                         <div class="col-lg-4">
                             <div class="imgHolder">
                                 <img src="/images/opening.png" alt="">
@@ -205,43 +236,44 @@
                                 <h2 class="sectionText textIsBlue">Current Openings -</h2>
 
                                 <div class="row mt-3">
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
+                                        <div class="position center vAlign">
+                                            <p class="sectionText mb-0">
+                                                SoftwareDeveloper</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mt-4">
+                                        <div class="position center vAlign">
+                                            <p class="sectionText mb-0">Blockchain Analyst</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
-                                        <div class="position center vAlign">
-                                            <p class="sectionText mb-0">Digital Marketer</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
-                                        <div class="position center vAlign">
-                                            <p class="sectionText mb-0">Digital Marketer</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-sm-6 mt-4">
+                                    <div class="col-lg-3 col-6 mt-4">
                                         <div class="position center vAlign">
                                             <p class="sectionText mb-0">Digital Marketer</p>
                                         </div>
@@ -252,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                </section> -->
+                </section>
 
                 <div class="container sectionHeight--short alignOnly">
                     <div class="w-100">
@@ -263,7 +295,7 @@
                                     <p class="sectionText--mid textIsGray">Stay up to date with our Newsletter</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mt-3">
                                 <div class="emailInput">
                                     <form class="alignOnly">
                                         <input type="email" placeholder="E-mail address">
@@ -276,8 +308,59 @@
                 </div>
             </div>
 
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 alignOnly sectionHeight--short">
+                            <div class="logo">
+                                <img src="/images/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 sectionHeight--short alignOnly">
+                            <div class="row w-100">
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Transfi Products</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Transfi Token</li>
+                                        <li class="pt-2 pb-2">Transfi Wallet</li>
+                                        <li class="pt-2 pb-2">Transfi App</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Company</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Login</li>
+                                        <li class="pt-2 pb-2">About us</li>
+                                        <li class="pt-2 pb-2">Affliates</li>
+                                        <li class="pt-2 pb-2">Careers</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 mt-4">
+                                    <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Follow us</h2>
+
+                                    <ul class="textIsWhite sectionText">
+                                        <li class="pt-2 pb-2">Twitter</li>
+                                        <li class="pt-2 pb-2">Telegram</li>
+                                        <li class="pt-2 pb-2">Facebook</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
         <script src='./assets/js/jquery.min.js'></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src='./js/index.js'></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
     </body>
