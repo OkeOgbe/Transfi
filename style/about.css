@@ -54,6 +54,22 @@
     border-right: 3px solid #023E8A;
     padding: 0 2rem;
 }
+
+.roadmap .carousel-indicators{
+    bottom: -35px;
+    justify-content: space-between;
+        margin: 0 !important;
+}
+
+.roadmap .carousel-indicators li{
+    width: 15%;
+    background-color:  lightgray;
+}
+
+.roadmap .sectionHeight--mid{
+    min-height: 35vh;
+}
+
 @media (max-width: 768px) {
     .about .imgHolder img {
         width: 100%;

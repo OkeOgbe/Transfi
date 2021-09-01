@@ -55,6 +55,10 @@ textarea{
     font-size: 0.9rem;
 }
 
+.sectionText--small{
+    font-size: 0.8rem;
+}
+
 .sectionText--mid {
     font-size: 1rem;
 }
@@ -285,6 +289,23 @@ ul{
 .borderless .imgHolder{
     padding: 1.5rem;
 }
+
+.roadmap .carousel-indicators {
+    top:  -30px;
+    justify-content: space-between;
+    margin: 0 !important;
+}
+
+
+.roadmap .carousel-indicators li {
+    width: 15%;
+    background-color: lightgray;
+}
+
+.carousel-indicators li.active{
+    background-color: #023E8A;
+}
+
 
 .token{
     padding: 3rem;
