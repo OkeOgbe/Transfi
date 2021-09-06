@@ -1,0 +1,70 @@
+@import url('./index.css');
+
+.nav{
+    position: relative;
+}
+
+.hero{
+    background-image: url('/images/roadmapBg.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon--filled{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: .7rem;
+    margin: 0 auto;
+    background-color: #F2FAFC;
+}
+
+.token__card{
+    padding: 2rem 1rem;
+    box-shadow: 0px 0px 8px lightgray;
+    min-height: 40vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.roadmap{
+       background-image: url('/images/tokenBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem; 
+}
+
+.roadmap .imgHolder{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.marginTop{
+    margin-top: 4rem;
+}
+
+.inner_card{
+    background-color: #F2FAFC;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.inner_card .textHolder{
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .marginTop {
+        margin-top: 0;
+    }
+
+    .roadmap{
+        padding: 1rem;
+    }
+
+    .inner_card .textHolder {
+        width: 100%;
+    }
+
+}   

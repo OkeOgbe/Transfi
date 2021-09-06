@@ -42,11 +42,11 @@
     color: #F2FAFC;
 }
 
-.roadmap {
+.roadmap_slide {
     background-image: url('/images/tokenBg.png');
 }
 
-.roadmap .contentHolder {
+.roadmap_slide .contentHolder {
     width: 90%;
 }
 
@@ -55,18 +55,18 @@
     padding: 0 2rem;
 }
 
-.roadmap .carousel-indicators{
+.roadmap_slide .carousel-indicators {
     bottom: -35px;
     justify-content: space-between;
         margin: 0 !important;
 }
 
-.roadmap .carousel-indicators li{
+.roadmap_slide .carousel-indicators li {
     width: 15%;
     background-color:  lightgray;
 }
 
-.roadmap .sectionHeight--mid{
+.roadmap_slide .sectionHeight--mid {
     min-height: 35vh;
 }
 
