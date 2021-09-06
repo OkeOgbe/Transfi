@@ -425,7 +425,21 @@ ul{
     width: 50%;
     padding: 0 2rem;
 }
+
+.noPad{
+    padding: 0;
+}
+
+.noMargin{
+    margin: 0;
+}
+
+
 @media (max-width: 768px) {
+
+    .mBlock{
+        display: block;
+    }
 
     .reverse{
         flex-direction: column-reverse;

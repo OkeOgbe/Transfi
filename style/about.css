@@ -58,18 +58,17 @@
 .roadmap_slide .carousel-indicators {
     bottom: -35px;
     justify-content: space-between;
-        margin: 0 !important;
+    margin: 0 !important;
 }
 
 .roadmap_slide .carousel-indicators li {
     width: 15%;
-    background-color:  lightgray;
+    background-color: lightgray;
 }
 
 .roadmap_slide .sectionHeight--mid {
     min-height: 35vh;
 }
-
 @media (max-width: 768px) {
     .about .imgHolder img {
         width: 100%;
@@ -97,13 +96,17 @@
         border-left: 3px solid #023E8A;
     }
 
-    .roadmap{
+    .roadmap {
         padding: 2rem 1rem;
     }
 
     .roadmap .contentHolder {
         width: 100%;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
+    }
+
+    .roadmap_slide .carousel-indicators {
+        bottom: 0;
     }
 
 }
