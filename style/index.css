@@ -1,7 +1,7 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
 :root {
     --bgBlue: #F2FAFC;
-    --defaultBlue: #0096C7;
+    --defaultBlue: #023E8A;
 }
 a,
 a:hover {
@@ -11,6 +11,7 @@ a:hover {
 body {
     font-family: 'Work Sans', sans-serif;
     background-color: #fffdfd;
+    overflow-x: hidden !important;
 }
 
 body,
@@ -23,20 +24,20 @@ button {
     border: none;
 }
 
-.ease{
-    transition: all .5s ease !important;
+.ease {
+    transition: all 0.5s ease !important;
 }
 
-.carousel-item{
+.carousel-item {
     padding: 2rem;
 }
 
-.textIsGray{
+.textIsGray {
     color: rgba(32, 32, 32, 0.7);
 }
 
 input,
-textarea{
+textarea {
     outline: none;
     border: none;
     background-color: #F8FAFD;
@@ -55,7 +56,7 @@ textarea{
     font-size: 0.9rem;
 }
 
-.sectionText--small{
+.sectionText--small {
     font-size: 0.8rem;
 }
 
@@ -67,8 +68,8 @@ textarea{
     font-size: 1.5rem;
 }
 
-.sectionHead--big{
-    font-size: 2rem;
+.sectionHead--big {
+    font-size: 2.3rem;
 }
 
 .sectionHeight {
@@ -87,14 +88,12 @@ textarea{
     min-height: 100vh;
 }
 
-
-
-.nav.fixed{
+.nav.fixed {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0px 5px 15px 0px #eae1e17a;
+    box-shadow: 0 5px 15px 0 #eae1e17a;
 }
 
 .nav__mobile {
@@ -151,10 +150,10 @@ textarea{
 
 .nav {
     position: absolute;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     width: 100%;
     right: 0;
-    left: 0;    
+    left: 0;
     z-index: 999;
 }
 
@@ -162,17 +161,21 @@ textarea{
     width: 60%;
 }
 
+.textIsOrange {
+    color: #FFCC3E;
+}
+
 .nav a {
     color: #202020;
 }
 
-footer{
+footer {
     background-color: #202020;
     min-height: 60vh;
     padding: 1rem;
 }
 
-footer .logo img{
+footer .logo img {
     width: 15rem;
     object-fit: contain;
 }
@@ -192,23 +195,27 @@ footer .logo img{
     text-align: center;
 }
 
-ul li{
+.borderRight{
+     border-right: 2px solid #fff;
+}
+
+ul li {
     list-style: none;
 }
 
-ul{
+ul {
     padding-left: 0;
 }
 
-.textIsWhite{
+.textIsWhite {
     color: #ffff;
 }
 
-.rAlign{
+.rAlign {
     text-align: right;
 }
 
-.lAlign{
+.lAlign {
     text-align: left;
 }
 
@@ -228,10 +235,20 @@ ul{
 
 .defaultBtn {
     background: var(--defaultBlue);
-    padding: 0.7rem 1rem;
+    padding: 1rem 1.5rem;
     text-align: center;
     color: #ffff !important;
+    width: 100%;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 3px #0000001A;
+}
+
+.transparentBtn {
+    background: transparent;
+    border: 1px solid var(--defaultBlue);
+    padding: 0.7rem 3rem;
+    text-align: center;
+    color: var(--defaultBlue);
 }
 
 .hero .textHolder {
@@ -253,6 +270,7 @@ ul{
 
 .why .textHolder {
     width: 60%;
+    margin: 0 auto;
 }
 
 .why__card {
@@ -264,11 +282,11 @@ ul{
     width: 35px;
     height: 35px;
     border-radius: 50px;
+    margin: 0 auto;
 }
 
-.emailInput {
+.emailInput form {
     background-color: #E9E9E9B2;
-    padding: 1rem;
     border-radius: 10px;
 }
 
@@ -280,36 +298,84 @@ ul{
 }
 
 .emailInput .defaultBtn {
+    padding: 0.9rem 0;
+    position: relative;
+    right: -5%;
+    width: 80%;
     border-radius: 10px;
 }
 
-.countdown {
-    width: 80%;
-    margin: 0 auto;
+.benefitsBg {
+    background-image: url('/images/benfitsBg.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
 }
 
-.borderless .imgHolder{
+.bgBlue {
+    background-image: url('/images/blueMap.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgGray {
+    background-color: #FBFBFB;
+}
+
+.globe .textHolder {
+    width: 80%;
+}
+
+.borderless .imgHolder {
     padding: 1.5rem;
 }
 
 .roadmap .carousel-indicators {
-    top:  -30px;
+    top: -30px;
     justify-content: space-between;
     margin: 0 !important;
 }
 
+.reviews {
+    overflow-x: hidden;
+}
+
+.reviews .textHolder {
+    width: 70%;
+}
+
+.bgMap--light {
+    background-image: url('/images/tokenBg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 .roadmap .carousel-indicators li {
     width: 15%;
     background-color: lightgray;
 }
 
-.carousel-indicators li.active{
+.carousel-indicators li.active {
     background-color: #023E8A;
 }
 
+.token .imgHolder {
+    width: 80%;
+    margin: 0 auto;
+}
 
-.token{
+.token .countdown {
+    background-image: url('/images/mapLight.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.token .textHolder {
+    background-color: #ECF8FD;
     padding: 3rem;
 }
 
@@ -328,9 +394,8 @@ ul{
 }
 
 .dot {
-    width: 10px;
+    width: 12px;
     height: 10px;
-    float: left;
     border-radius: 50px;
 }
 
@@ -360,6 +425,7 @@ ul{
 
 .stat .progress {
     width: 90%;
+    height: 10px;
     margin: 0 auto;
 }
 
@@ -426,27 +492,37 @@ ul{
     padding: 0 2rem;
 }
 
-.noPad{
+.noPad {
     padding: 0;
 }
 
-.noMargin{
+.noMargin {
     margin: 0;
 }
-
-
 @media (max-width: 768px) {
 
-    .mBlock{
+    .mBlock {
         display: block;
     }
 
-    .reverse{
+    .reverse {
         flex-direction: column-reverse;
     }
 
+    .globe .img {
+        width: 60%;
+    }
+
+    .token .countdown {
+        padding: 1rem;
+    }
+
+    .token .textHolder {
+        padding: 1.5rem;
+    }
+
     .defaultBtn {
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
     }
 
     .nav {
@@ -485,12 +561,11 @@ ul{
         margin-top: 1rem;
     }
 
-
-    footer{
+    footer {
         min-height: 30vh;
     }
 
-    footer .sectionHeight--short{
+    footer .sectionHeight--short {
         min-height: 30vh;
     }
 
@@ -498,8 +573,23 @@ ul{
         padding: 1rem;
     }
 
-.token {
-    padding: 1rem;
-}
+    .emailInput form {
+        background-color: #ffff;
+    }
+
+    .emailInput input {
+        background: #E9E9E9B2;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .emailInput .defaultBtn {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .borderRight{
+        border: none;
+    }
 
 }
