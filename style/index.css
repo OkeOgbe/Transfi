@@ -88,11 +88,13 @@ textarea {
     min-height: 100vh;
 }
 
-.nav.fixed {
+.nav.fixed,
+.nav__mobile.fixed {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 999;
     box-shadow: 0 5px 15px 0 #eae1e17a;
 }
 
@@ -100,7 +102,7 @@ textarea {
     display: none;
     position: relative;
     background-color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     min-height: 50px;
     transition: all 0.4s ease;
 }
@@ -121,6 +123,10 @@ textarea {
 .nav__mobileMenu.active {
     transform: scale(1);
     visibility: visible;
+}
+
+.nav__mobileMenu a {
+    font-size: 18px;
 }
 
 .menuIcon {
@@ -176,7 +182,7 @@ footer {
 }
 
 footer .logo img {
-    width: 15rem;
+    width: 10rem;
     object-fit: contain;
 }
 
@@ -195,8 +201,8 @@ footer .logo img {
     text-align: center;
 }
 
-.borderRight{
-     border-right: 2px solid #fff;
+.borderRight {
+    border-right: 2px solid #fff;
 }
 
 ul li {
@@ -236,6 +242,7 @@ ul {
 .defaultBtn {
     background: var(--defaultBlue);
     padding: 1rem 1.5rem;
+    font-size: 15px;
     text-align: center;
     color: #ffff !important;
     width: 100%;
@@ -284,7 +291,7 @@ ul {
     border-radius: 50px;
     margin: 0 auto;
 }
-
+/* 
 .emailInput form {
     background-color: #E9E9E9B2;
     border-radius: 10px;
@@ -303,7 +310,7 @@ ul {
     right: -5%;
     width: 80%;
     border-radius: 10px;
-}
+} */
 
 .benefitsBg {
     background-image: url('/images/benfitsBg.png');
@@ -394,9 +401,9 @@ ul {
 }
 
 .dot {
-    width: 12px;
-    height: 10px;
-    border-radius: 50px;
+width: 14px;
+height: 12px;
+border-radius: 50px;
 }
 
 .dot.blue {
@@ -421,6 +428,14 @@ ul {
 
 .dot.d_blue {
     background-color: #3E72FF;
+}
+
+.dot.purple{
+     background-color: #AD00FE;
+}
+
+.dot.black{
+    background-color: black;
 }
 
 .stat .progress {
@@ -453,9 +468,23 @@ ul {
     background-color: #C4D7FD;
 }
 
+.stat .progress.black{
+     background-color: #0000003b;
+}
+
+.stat .progress.purple{
+    background-color: #ad01fe42;
+}
+
 .stat .progress__thumb {
     border-radius: 50px;
 }
+
+.stat .progress__thumb.black{
+     background-color: black;
+     width: 10%;
+}
+
 
 .stat .progress__thumb.blue {
     background-color: #03C5FF;
@@ -465,6 +494,11 @@ ul {
 .stat .progress__thumb.green {
     background-color: #67FA97;
     width: 60%;
+}
+
+.stat .progress__thumb.purple{
+        background-color: #AD00FE;
+        width: 30%;
 }
 
 .stat .progress__thumb.orange {
@@ -499,7 +533,76 @@ ul {
 .noMargin {
     margin: 0;
 }
+
+.slider .slide {
+    animation: slide 20s infinite linear;
+    margin: 2rem;
+}
+
+.slider .slide img{
+    height: 60px;
+    width: 150px;
+}
+
+.review {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.review .imgHolder {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.emailInput{
+    border-radius: 5px;
+    background-color: #E9E9E9;
+    overflow: hidden;
+}
+
+.emailInput form{
+    display: flex;
+}
+
+.emailInput input{
+    background: transparent;
+    width: 100%;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+}
+
+.emailInput .defaultBtn{
+        padding: 0.9rem 0;
+        position: relative;
+        right: -5%;
+        width: 80%;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
+
+    .sectionHead--big {
+        font-size: 2rem;
+    }
+
+    .sectionHead {
+        font-size: 1.3rem;
+    }
 
     .mBlock {
         display: block;
@@ -523,6 +626,10 @@ ul {
 
     .defaultBtn {
         padding: 1rem 2rem;
+    }
+
+    .slider{
+        overflow-x: hidden;
     }
 
     .nav {
@@ -573,22 +680,16 @@ ul {
         padding: 1rem;
     }
 
-    .emailInput form {
-        background-color: #ffff;
-    }
 
-    .emailInput input {
-        background: #E9E9E9B2;
-        border-radius: 0;
-        width: 100%;
+    .emailInput{
+        background: #E9E9E9;
     }
 
     .emailInput .defaultBtn {
-        margin-top: 1rem;
         text-align: center;
     }
 
-    .borderRight{
+    .borderRight {
         border: none;
     }
 
