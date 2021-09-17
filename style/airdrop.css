@@ -15,3 +15,14 @@
     position: absolute;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .cta .inner_card {
+        width: 95%;
+        top: -20rem;
+        right: 0;
+        left: 0;
+        position: relative;
+
+    }
+}

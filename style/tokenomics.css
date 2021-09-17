@@ -57,7 +57,12 @@
 }
 
 .inner_card .textHolder{
+    width: 90%;
+}
+
+.inner_card .imgHolder{
     width: 80%;
+    margin: 0 auto;
 }
 
 .guide .dot{
@@ -73,6 +78,21 @@
     margin: 0 auto;
 }
 
+.owl-stage .owl-item.active .dot{
+    background-color:  var(--defaultBlue);
+}
+
+.cta{
+ position: relative;
+}
+
+.cta .inner_card{
+    position: absolute;
+    top: 5rem;
+   right: -50%;
+   left: -50%;
+}
+
 @media (max-width: 768px) {
     .marginTop {
         margin-top: 0;
@@ -85,5 +105,7 @@
     .inner_card .textHolder {
         width: 100%;
     }
+
+
 
 }   

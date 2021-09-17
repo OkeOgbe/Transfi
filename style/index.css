@@ -192,6 +192,15 @@ footer .logo img {
     justify-content: space-between;
 }
 
+.textIsGreen {
+    color: #00BF3E;
+}
+
+.slide .imgHolder {
+    width: 60px;
+    height: 60px;
+}
+
 .alignOnly {
     display: flex;
     align-items: center;
@@ -401,9 +410,9 @@ ul {
 }
 
 .dot {
-width: 14px;
-height: 12px;
-border-radius: 50px;
+    width: 14px;
+    height: 12px;
+    border-radius: 50px;
 }
 
 .dot.blue {
@@ -430,11 +439,11 @@ border-radius: 50px;
     background-color: #3E72FF;
 }
 
-.dot.purple{
-     background-color: #AD00FE;
+.dot.purple {
+    background-color: #AD00FE;
 }
 
-.dot.black{
+.dot.black {
     background-color: black;
 }
 
@@ -468,11 +477,11 @@ border-radius: 50px;
     background-color: #C4D7FD;
 }
 
-.stat .progress.black{
-     background-color: #0000003b;
+.stat .progress.black {
+    background-color: #0000003b;
 }
 
-.stat .progress.purple{
+.stat .progress.purple {
     background-color: #ad01fe42;
 }
 
@@ -480,11 +489,10 @@ border-radius: 50px;
     border-radius: 50px;
 }
 
-.stat .progress__thumb.black{
-     background-color: black;
-     width: 10%;
+.stat .progress__thumb.black {
+    background-color: black;
+    width: 10%;
 }
-
 
 .stat .progress__thumb.blue {
     background-color: #03C5FF;
@@ -496,9 +504,9 @@ border-radius: 50px;
     width: 60%;
 }
 
-.stat .progress__thumb.purple{
-        background-color: #AD00FE;
-        width: 30%;
+.stat .progress__thumb.purple {
+    background-color: #AD00FE;
+    width: 30%;
 }
 
 .stat .progress__thumb.orange {
@@ -535,13 +543,16 @@ border-radius: 50px;
 }
 
 .slider .slide {
-    animation: slide 20s infinite linear;
-    margin: 2rem;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.slider .slide img{
+.partners .slider .slide img {
     height: 60px;
     width: 150px;
+    padding: 0 2rem;
 }
 
 .review {
@@ -557,28 +568,27 @@ border-radius: 50px;
     overflow: hidden;
 }
 
-
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-150px * 7));
     }
 }
 
-.emailInput{
+.emailInput {
     border-radius: 5px;
     background-color: #E9E9E9;
     overflow: hidden;
 }
 
-.emailInput form{
+.emailInput form {
     display: flex;
 }
 
-.emailInput input{
+.emailInput input {
     background: transparent;
     width: 100%;
     padding: 0 1rem;
@@ -586,12 +596,32 @@ border-radius: 50px;
     outline: none;
 }
 
-.emailInput .defaultBtn{
-        padding: 0.9rem 0;
-        position: relative;
-        right: -5%;
-        width: 80%;
+.emailInput .defaultBtn {
+    padding: 0.9rem 0;
+    position: relative;
+    right: -5%;
+    width: 80%;
     border-radius: 5px;
+}
+
+.cta {
+    position: relative;
+}
+
+.cta .inner_card {
+    position: absolute;
+    top: 5rem;
+    right: -50%;
+    left: -50%;
+}
+
+.inner_card .textHolder {
+    width: 90%;
+}
+
+.inner_card .imgHolder {
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -628,7 +658,7 @@ border-radius: 50px;
         padding: 1rem 2rem;
     }
 
-    .slider{
+    .slider {
         overflow-x: hidden;
     }
 
@@ -640,6 +670,10 @@ border-radius: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .nav__mobileMenu .sectionHeight--mid{
+        min-height: 95vh;
     }
 
     .nav__mobileMenu {
@@ -680,8 +714,7 @@ border-radius: 50px;
         padding: 1rem;
     }
 
-
-    .emailInput{
+    .emailInput {
         background: #E9E9E9;
     }
 
@@ -691,6 +724,14 @@ border-radius: 50px;
 
     .borderRight {
         border: none;
+    }
+
+    .reviews .sectionHeight--mid {
+        min-height: 60vh;
+    }
+
+    .stat .progress {
+        margin-top: 1rem;
     }
 
 }
