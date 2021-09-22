@@ -106,6 +106,13 @@
         width: 100%;
     }
 
+   .cta .inner_card {
+       width: 95%;
+       top: -20rem;
+       right: 0;
+       left: 0;
+       position: relative;
 
+   }
 
 }   
