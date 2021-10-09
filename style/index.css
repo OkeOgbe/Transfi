@@ -1,4 +1,5 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
 :root {
     --bgBlue: #F2FAFC;
     --defaultBlue: #023E8A;
@@ -9,7 +10,7 @@ a:hover {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif !important;
     background-color: #fffdfd;
     overflow-x: hidden !important;
 }
@@ -28,12 +29,20 @@ button {
     transition: all 0.5s ease !important;
 }
 
+.isClickable{
+    cursor: pointer;
+}
+
 .carousel-item {
     padding: 2rem;
 }
 
 .textIsGray {
     color: rgba(32, 32, 32, 0.7);
+}
+
+.textIsYellow{
+        color: #F3BA2F;
 }
 
 input,
@@ -213,6 +222,11 @@ textarea {
     width: 60%;
 }
 
+.navLinkHolder .active{
+    color: var(--defaultBlue);
+    font-weight: bold;
+}
+
 .textIsOrange {
     color: #FFCC3E;
 }
@@ -341,10 +355,15 @@ ul {
 
 .why__card .icon {
     box-shadow: 0 4px 10px 3px #C4C4C433;
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     margin: 0 auto;
+    background-color: #0096c72b;
+}
+
+.icon img{
+    width: 60%;
 }
 /* 
 .emailInput form {
@@ -438,7 +457,7 @@ ul {
 
 .token .textHolder {
     background-color: #ECF8FD;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 .tokenomics {
