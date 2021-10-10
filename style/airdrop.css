@@ -9,7 +9,9 @@
 }
 
 .cta .inner_card{
-    background-color: #F2FAFC;
+    background-image: url('/images/BG.png');
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 1.5rem;
     border-radius: 5px;
     position: absolute;

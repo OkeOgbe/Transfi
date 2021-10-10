@@ -4,6 +4,7 @@
     --bgBlue: #F2FAFC;
     --defaultBlue: #023E8A;
 }
+
 a,
 a:hover {
     text-decoration: none;
@@ -13,6 +14,10 @@ body {
     font-family: 'Work Sans', sans-serif !important;
     background-color: #fffdfd;
     overflow-x: hidden !important;
+}
+
+footer a:hover{
+    color: #fff;
 }
 
 body,
@@ -32,13 +37,17 @@ button {
 .isClickable{
     cursor: pointer;
 }
-
+/* 
 .carousel-item {
     padding: 2rem;
-}
+} */
 
 .textIsGray {
     color: rgba(32, 32, 32, 0.7);
+}
+
+.textIsGray--light{
+    color: #BDBDBD;
 }
 
 .textIsYellow{
@@ -229,10 +238,6 @@ textarea {
 
 .textIsOrange {
     color: #FFCC3E;
-}
-
-.nav a {
-    color: #202020;
 }
 
 footer {

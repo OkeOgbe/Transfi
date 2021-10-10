@@ -46,10 +46,14 @@
     margin-top: 4rem;
 }
 
-.inner_card{
-    background-color: #F2FAFC;
-    border-radius: 30px;
-    padding: 1rem;
+.cta .inner_card {
+    background-image: url('/images/BG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1.5rem;
+    border-radius: 5px;
+    position: absolute;
+    margin: 0 auto;
 }
 
 .owl-item.active .guideStep h2{
