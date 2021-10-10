@@ -61,7 +61,7 @@ textarea {
     background-color: #F8FAFD;
     padding: 1rem;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     color: #20202080;
 }
 
@@ -807,5 +807,9 @@ ul {
     .mShort{
         max-height: 45vh;
     }
+
+.review{
+    width: 90%;
+}
 
 }
