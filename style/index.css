@@ -247,7 +247,7 @@ footer {
 }
 
 footer .logo img {
-    width: 10rem;
+    width: 20rem;
     object-fit: contain;
 }
 
@@ -276,7 +276,7 @@ footer .logo img {
 }
 
 .borderRight {
-    border-right: 2px solid #fff;
+    border-right: 3px solid #fff;
 }
 
 ul li {
@@ -392,7 +392,7 @@ ul {
 } */
 
 .benefitsBg {
-    background-image: url('/images/benfitsBg.png');
+    background-image: url('./images/benfitsBg.png');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,7 +400,7 @@ ul {
 }
 
 .bgBlue {
-    background-image: url('/images/blueMap.png');
+    background-image: url('../images/blueMap.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -612,17 +612,25 @@ ul {
     margin: 0;
 }
 
-.slider .slide {
+.slider {
     animation-name: slide;
     animation-duration: 10s;
-    animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.bx-wrapper{
+    box-shadow: none;
+    border: none
+}
+
+.bx-viewport{
+    height: auto !important;
 }
 
 .partners .slider .slide img {
     height: 60px;
     width: 150px;
-    padding: 0 2rem;
+    padding: 0px 1rem;
 }
 
 .review {
@@ -643,9 +651,14 @@ ul {
         transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(calc(-150px * 7));
+    50% {
+        transform: translateX(calc(-150px * 2 ));
     }
+
+    100%{
+         transform: translateX(0);
+    }
+
 }
 
 .emailInput {
@@ -813,3 +826,37 @@ ul {
 }
 
 }
+ .globe h2{
+     line-height: 2.5rem;
+     margin-bottom: 2.5rem;
+ }
+
+ .globe p{
+    line-height: 1.5rem;
+ }
+
+ .globe-textHolder{
+     padding-top: 5rem;
+     padding-left: 5rem;
+ }
+
+ .reasons-why{
+     margin: 0 4rem;
+ }
+
+ .upcoming-events{
+    padding-top:2rem;
+    padding-left:8rem;
+    padding-bottom: 4rem;
+ }
+
+ .third-col{
+     padding-left: 3rem;
+     color: #eecc6d;
+     opacity:0.6;
+    
+ }
+
+ 
+
+ 
