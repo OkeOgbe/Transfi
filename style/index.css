@@ -612,17 +612,25 @@ ul {
     margin: 0;
 }
 
-.slider .slide {
+.slider {
     animation-name: slide;
     animation-duration: 10s;
-    animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.bx-wrapper{
+    box-shadow: none;
+    border: none
+}
+
+.bx-viewport{
+    height: auto !important;
 }
 
 .partners .slider .slide img {
     height: 60px;
     width: 150px;
-    padding: 0 2rem;
+    padding: 0px 1rem;
 }
 
 .review {
@@ -643,9 +651,14 @@ ul {
         transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(calc(-150px * 7));
+    50% {
+        transform: translateX(calc(-150px * 2 ));
     }
+
+    100%{
+         transform: translateX(0);
+    }
+
 }
 
 .emailInput {
