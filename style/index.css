@@ -618,15 +618,6 @@ ul {
     animation-iteration-count: infinite;
 }
 
-.bx-wrapper{
-    box-shadow: none;
-    border: none
-}
-
-.bx-viewport{
-    height: auto !important;
-}
-
 .partners .slider .slide img {
     height: 60px;
     width: 150px;
@@ -788,6 +779,10 @@ ul {
         min-height: 30vh;
     }
 
+    .logo__mobile{
+        width: 80%;
+    }
+
     footer .sectionHeight--short {
         min-height: 30vh;
     }
@@ -841,7 +836,7 @@ ul {
  }
 
  .reasons-why{
-     margin: 0 4rem;
+     margin: 0;
  }
 
  .upcoming-events{
