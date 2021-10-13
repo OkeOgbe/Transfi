@@ -5,7 +5,7 @@
 }
 
 .hero{
-    background-image: url('/images/roadmapBg.png') ;
+    background-image: url('../images/roadmapBg.png') ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,7 +30,7 @@
 }
 
 .roadmap{
-       background-image: url('/images/tokenBg.png');
+       background-image: url('../images/tokenBg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .cta .inner_card {
-    background-image: url('/images/BG.png');
+    background-image: url('../images/BG.png');
     background-repeat: no-repeat;
     background-position: center;
     padding: 1.5rem;
@@ -95,6 +95,10 @@
     top: 5rem;
    right: -50%;
    left: -50%;
+}
+
+.tokenomics-hero-height{
+    min-height:30vh
 }
 
 @media (max-width: 768px) {
