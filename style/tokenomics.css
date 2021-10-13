@@ -56,9 +56,7 @@
     margin: 0 auto;
 }
 
-.owl-item.active .guideStep h2{
-    color: var(--defaultBlue);
-}
+
 
 .inner_card .textHolder{
     width: 90%;
@@ -74,16 +72,36 @@
     position: absolute;
     transform: translate(13rem, 0);
     height: 20px;
-    background-color: black;
+    background-color: #D1D1D1;
+    transition: all 0.6s ease;
+}
+
+.guideStep{
+    width: 100%;
 }
 
 .guideStep .textHolder{
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
-.owl-stage .owl-item.active .dot{
-    background-color:  var(--defaultBlue);
+.owl-item{
+    opacity: .5;
+}
+
+.owl-item.active.center {
+    opacity: 1;
+}
+
+.owl-item.active.center .dot{
+    background-color: var(--defaultBlue);
+    box-shadow: 0px 0px 1px 6px #0000ff3d;
+}
+
+.owl-item.active.center h2{
+    color: var(--defaultBlue);
+    font-weight: bold;
 }
 
 .cta{
