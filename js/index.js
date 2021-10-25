@@ -1,3 +1,4 @@
+
 $(document)
     .ready(function () {
         $('.owl-carousel').owlCarousel({
@@ -18,6 +19,7 @@ $(document)
             }
         });
     });
+    
 
 $(".menuIcon").on("click", () => {
     $(".nav__mobileMenu").addClass('active')
@@ -173,3 +175,5 @@ update = function () {
     requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+
