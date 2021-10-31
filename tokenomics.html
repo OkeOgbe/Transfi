@@ -58,8 +58,11 @@
                             </div>
 
                             <div class="spaceBetween sectionText">
-                                <a href="#" class="mr-5 transparentBtn">Login</a>
-                                <a href="#" class="defaultBtn ">Get Started</a>
+                                <button type="button" class="mr-5 transparentBtn"data-toggle="modal" data-target="#exampleModal">
+                                    Login
+                                  </button>
+                                  <button type="button" class="defaultBtn" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">
+                                    Join Private Sales</button>
                             </div>
                         </div>
                     </div>
@@ -102,11 +105,16 @@
                                 </div>
 
                                 <div class="pt-3 pb-3">
-                                    <a href="#" class="textIsBlue">Login</a>
+                                    <button type="button" class="textIsBlue" data-toggle="modal" data-target="#exampleModal">
+                                        Login
+                                      </button>
+                                    
                                 </div>
 
                                 <div class="pt-3 pb-3">
-                                    <a href="#" class="defaultBtn">Join Transfi</a>
+                                    <button type="button" class="defaultBtn" data-toggle="modal" data-target="#privateSales">
+                                        Join Private Sales
+                                      </button>
                                 </div>
                             </div>
                         </div>
@@ -114,13 +122,177 @@
                 </div>
             </div>
 
-            <div class="sectionHeight--short hero center">
-                <div class="w-100 textIsWhite vAlign">
+            <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content ">
+                    <div class="modal-body center mx-2">
+                        <a href='https://t.me/TRANSFI_OFFICIAL' class="defaultBtn w-100 ">join Our Telegram Community</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            <div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+                      </button>
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label textIsBlue">First Name:</label>
+                        <input type="text" class="form-control emailInput" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label textIsBlue">Last Name:</label>
+                        <input type="text" class="form-control emailInput" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
+                        <input type="email" class="form-control emailInput" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="defaultBtn w-100">Join Private Sales</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="waitingList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+                        </button>
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
+                          <input type="email" class="form-control emailInput" id="recipient-name">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="defaultBtn w-100">Join Waiting List</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+                <div class="w-100 textIsBlue vAlign">
                     <h2 class="sectionHead--mid">Tokenomics</h2>
                     <p class="sectionText--mid">The Numbers Behind Transfi Token
                     </p>
                 </div>
+            
+
+
+
+
+
+
+
+
+
+
+            <div class='container'> 
+            <canvas class='textIsBlue' id="myChart" width="400" height="200"></canvas>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
+            <script>
+            const ctx = document.getElementById('myChart');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [
+                        'Private investors', 
+                        'Private Sale', 
+                        'Pre-sale', 
+                        'Airdrop Reward', 
+                        'Strategic Partnership', 
+                        'Marketing and Buyback',
+                        'Team Token',
+                        'Burn',
+                        'Liquidity'
+                    ],
+                    datasets: [{
+                        label: 'Tokens',
+                        data: [5, 
+                            10, 
+                            30, 
+                            5, 
+                            10, 
+                            15,
+                            10,
+                            5,
+                            5 
+                            ],
+                        backgroundColor: [
+                            'blue',
+                            'orange',
+                            'green',
+                            'pink',
+                            'orange',
+                            'blue',
+                            'purple',
+                            'pink',
+                            'black'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        borderWidth: 0.5,
+                        responsive: true,
+                        raduis:'10%'
+                    }]
+                },
+                options: {
+                    legend: {
+                        labels: {
+                             // This more specific font property overrides the global property
+                        fontColor: 'blue',
+                        fontSize:18
+                     }
+                 },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="container mt-4 sectionHeight pt-4 pb-4">
                 <div class="row w-100 noMargin">
@@ -652,12 +824,18 @@
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Transfi Products</h2>
 
                                     <ul class="textIsWhite sectionText">
-                                        <li class="pt-2 pb-2 isClickable">Transfi Token</li>
-                                        <li class="pt-2 pb-2 isClickable">Transfi Wallet</li>
-                                        <li class="pt-2 pb-2 isClickable">Transfi App</li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                                Transfi Wallet  
+                                        </li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                            Transfi App
+                                        </li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                            Transfi API
+                                        </li>
                                     </ul>
                                 </div>
-
+<!--
                                 <div class="col-md-4 mt-4">
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Company</h2>
 
@@ -679,7 +857,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
+-->
                                 <div class="col-md-4 mt-4">
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Follow us</h2>
 
@@ -728,12 +906,14 @@
         <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
         <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src='https://cdnjs.com/libraries/Chart.js'></script>
         <script>
             AOS.init();
         </script>
         <script src='./js/index.js'></script>
         <script src="/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
+       
     </body>
 </html>
 

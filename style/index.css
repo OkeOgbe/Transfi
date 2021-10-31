@@ -116,6 +116,8 @@ textarea {
     border-radius: 0 0 3px 3px;
 }
 
+
+
 .sectionText {
     font-size: 0.9rem;
 }
@@ -211,7 +213,7 @@ textarea {
     width: 50%;
 }
 
-.close {
+.closes {
     font-size: 30px;
     position: absolute;
     right: 3rem;
@@ -225,6 +227,7 @@ textarea {
     right: 0;
     left: 0;
     z-index: 999;
+    opacity: 1;
 }
 
 .navLinkHolder {
@@ -636,6 +639,8 @@ ul {
     border-radius: 50px;
     overflow: hidden;
 }
+
+
 
 @keyframes slide {
     0% {

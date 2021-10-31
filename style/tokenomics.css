@@ -140,5 +140,8 @@
        position: relative;
 
    }
+   canvas{
+       height:400;
+   }
 
 }   

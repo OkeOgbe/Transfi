@@ -35,15 +35,16 @@
             href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap">
         <link
             rel="stylesheet"
-            href="./assets/bootstrap-4.6.0-dist/css/bootstrap.min.css">
-        <link
+            href="./assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+        
+       <link
             rel="stylesheet"
             href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
         <link
             rel="stylesheet"
             href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-        <link rel="stylesheet" href="./style/index.css">
+         <link rel="stylesheet" href="./style/index.css">
     </head>
     <body>
         <div class="">
@@ -68,8 +69,13 @@
                             </div>
 
                             <div class="spaceBetween sectionText">
-                                <a href="#" class="mr-5 transparentBtn">Login</a>
-                                <a href="#" class="defaultBtn ">Get Started</a>
+                                <!-- Button trigger modal -->
+<button type="button" class="mr-5 transparentBtn"data-toggle="modal" data-target="#exampleModal">
+    Login
+  </button>
+  <button type="button" class="defaultBtn" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">
+    Join Private Sales</button>
+                
                             </div>
                         </div>
                     </div>
@@ -87,7 +93,7 @@
 
                 <div class="nav__mobileMenu">
                     <div class="sectionHeight--mid">
-                        <i class="fas fa-times close"></i>
+                        <i class="fas fa-times closes"></i>
                         <div class="sectionHeight--mid alignOnly">
 
                             <div class="w-100 vAlign sectionText--mid">
@@ -112,17 +118,87 @@
                                 </div>
 
                                 <div class="pt-3 pb-3">
-                                    <a href="#" class="textIsBlue">Login</a>
+                                    <button type="button" class="textIsBlue" data-toggle="modal" data-target="#exampleModal">
+                                        Login
+                                      </button>
+                                    
                                 </div>
 
                                 <div class="pt-3 pb-3">
-                                    <a href="#" class="defaultBtn">Join Transfi</a>
+                                    <button type="button" class="defaultBtn" data-toggle="modal" data-target="#privateSales">
+                                        Join Private Sales
+                                      </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content ">
+        <div class="modal-body center mx-2">
+            <a href='https://t.me/TRANSFI_OFFICIAL' class="defaultBtn w-100 ">join Our Telegram Community</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+          </button>
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label textIsBlue">First Name:</label>
+            <input type="text" class="form-control emailInput" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label textIsBlue">Last Name:</label>
+            <input type="text" class="form-control emailInput" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
+            <input type="email" class="form-control emailInput" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="defaultBtn w-100">Join Private Sales</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="waitingList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+            </button>
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
+              <input type="email" class="form-control emailInput" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="defaultBtn w-100">Join Waiting List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
             <div class="">
 
@@ -136,12 +212,12 @@
                                 <div class="textHolder">
                                     <h2 class="sectionHead--big textIsBlue textIsBold" style="line-height: 1.5;">
                                         A Blockchain-Based Ecosystem For Better Transport Solutions</h2>
-                                    <p class='sectionText--mid mt-3 pb-2'>With a decentralized token built to ease
-                                        your transportation hassles, with a wide range of access to transport services
-                                        and products around the World.
+                                    <p class='sectionText--mid mt-3 pb-2'>Transfi enables its users and businesses 
+                                        to enjoy a fair and efficient transport system and other related services 
+                                        across the globe using Blockchain Technology.
                                     </p>
                                     <div class="mt-4">
-                                        <a href="#" class="defaultBtn">Get Started
+                                        <a class="defaultBtn" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">Join Private Sales
                                             <i class="fas fa-arrow-right mx-2"></i>
                                         </a>
                                     </div>
@@ -173,7 +249,7 @@
                             </p>
 
                             <div class="mt-5">
-                                <a href="/" class="defaultBtn">Learn More
+                                <a href="#whitePaper" class="defaultBtn">Learn More
                                     <i class="fas fa-arrow-right mx-1"></i>
                                 </a>
                             </div>
@@ -232,7 +308,7 @@
                                     No third-Party Involved.</span>
                             </h2>
 
-                            <p class="sectionText--mid mt-3">
+                            <p id="whitePaper" class="sectionText--mid mt-3">
                                 Transfi Smart Contract saves money for your business, cutting out unnecessary
                                 fees from exchange services and middle men, fast tracking your transcations
                                 while ensuring secured payment gateway across several transport services.
@@ -306,32 +382,35 @@
                 <div class="container">
                     <div
                         id="carouselExampleControls"
-                        class="carousel slide carousel-fade"
+                        class="carousel slide"
                         data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row w-100">
                                     <div class="col-lg-6 alignOnly sectionHeight">
                                         <div class="textHolder" style="padding: .2rem;">
-                                            <p class="sectionText mb-1">Transfi Token Dashboard</p>
+                                            <p class="sectionText mb-1">API Integration</p>
                                             <h2 class="sectionHead textIsBlue textIsBold" style="line-height: 1.4;">
-                                                A Dashboard built for
-                                                <span class="textIsYellow">Efficiency</span>
+                                                Have it merged in 
+                                                <span class="textIsYellow">No Time</span>
                                             </h2>
 
                                             <p class="sectionText--mid mt-3">
-                                                The Transfi merchant’s dashboard has everything you need to see at the click of
-                                                a button. Manage your Transfi Assets all in one place
+                                               You've got things to do. with seamless integration, you wont have to wait Long
+                                               for a code review. Your online stores can start accepting digital currencies seamlessly
+                                               and most importantly, quickly 
                                             </p>
 
                                             <div class="mt-5">
-                                                <a href="#" class="defaultBtn">Get Started</a>
+                                                <a href="#" class="defaultBtn" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                                    See Documentation
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 sectionHeight alignOnly">
                                         <div class="imgHolder center w-100">
-                                            <img src="./images/dashboard.png" class="w-100" alt="">
+                                            <img src="./images/apiIntegration.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -354,7 +433,9 @@
                                             </p>
 
                                             <div class="mt-5">
-                                                <a href="#" class="defaultBtn">Get Started</a>
+                                                <a href="#" class="defaultBtn" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                                    Get Started
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -383,7 +464,9 @@
                                             </p>
 
                                             <div class="mt-5">
-                                                <a href="#" class="defaultBtn">Get Started</a>
+                                                <a href="#" class="defaultBtn" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                                    Get Started
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -664,12 +747,18 @@
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Transfi Products</h2>
 
                                     <ul class="textIsWhite sectionText">
-                                        <li class="pt-2 pb-2 isClickable">Transfi Token</li>
-                                        <li class="pt-2 pb-2 isClickable">Transfi Wallet</li>
-                                        <li class="pt-2 pb-2 isClickable">Transfi App</li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                                Transfi Wallet  
+                                        </li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                            Transfi App
+                                        </li>
+                                        <li class="pt-2 pb-2 isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo">
+                                            Transfi API
+                                        </li>
                                     </ul>
                                 </div>
-
+                                <!--
                                 <div class="col-md-4 mt-4">
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Company</h2>
 
@@ -691,7 +780,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
+                                -->
                                 <div class="col-md-4 mt-4">
                                     <h2 class="textIsBlue sectionText--mid" style="color: #FFFFFF80;">Follow us</h2>
 
@@ -735,11 +824,12 @@
 
         </div>
         <script src='./assets/js/jquery.min.js'></script>
-        <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-        <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./assets/particles.js-master/particles.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
         <script>
             AOS.init();
         </script>
