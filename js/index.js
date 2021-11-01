@@ -1,4 +1,105 @@
 
+const privateSaleBtn =  document.querySelector('.privateSaleBtn')
+const formFunc = async ()=>{
+    const type =  document.querySelector('#type').value
+    const firstName =  document.querySelector('#firstName').value
+    const lastName =  document.querySelector('#lastName').value
+    const email =  document.querySelector('#email').value
+    document.querySelector('.privateSaleForm').style.display = 'none'
+    document.querySelector('.privateSaleLoading').style.display = 'block'
+     const response = await fetch('https://api.transfi.net/api/user-list', {
+        headers: { 'Content-Type': 'application/json',
+                    Accept:'application/json'
+                },
+        method:'POST',
+        body:JSON.stringify({
+            type: type,
+            first_name: firstName,
+            last_name: lastName,
+            email: email
+        })    
+    })
+    if (response.ok){
+        const jsonResponse = await response.json()
+        document.querySelector('.privateSaleSuccess').innerHTML = jsonResponse.message
+        document.querySelector('.privateSaleLoading').style.display = 'none'
+        document.querySelector('.privateSaleSuccess').style.display = 'block'
+    }
+}
+privateSaleBtn.onclick = formFunc;
+
+
+const mailingListBtn =  document.querySelector('.mailingListBtn')
+const mailingFunc = async()=>{
+    console.log('submitting')
+    const email =  document.querySelector('#mailingMail').value
+    
+     const response = await fetch('https://api.transfi.net/api/user-list', {
+        headers: { 'Content-Type': 'application/json',
+                    Accept:'application/json'
+                },
+        method:'POST',
+        body:JSON.stringify({
+            type: 'mailing_list',
+            email: email
+        })    
+    })
+    if (response.ok){
+        const jsonResponse = await response.json()
+        document.querySelector('#mailingMail').style.display = 'none'
+        document.querySelector('.mailingListBtn').innerHTML = jsonResponse.message
+        document.querySelector('#mailingListBtn').style.width = '100%'
+    }
+}
+mailingListBtn.onclick = mailingFunc;
+
+
+const productBtn =  document.querySelector('.productBtn')
+const productFunc = async ()=>{
+    const email =  document.querySelector('#productEmail').value
+    document.querySelector('.productForm').style.display = 'none'
+    document.querySelector('.productLoading').style.display = 'block'
+     const response = await fetch('https://api.transfi.net/api/user-list', {
+        headers: { 'Content-Type': 'application/json',
+                    Accept:'application/json'
+                },
+        method:'POST',
+        body:JSON.stringify({
+            type:'product_waiting_list',
+            email: email
+        })    
+    })
+    if (response.ok){
+        const jsonResponse = await response.json()
+        document.querySelector('.productSuccess').innerHTML = jsonResponse.message
+        document.querySelector('.productLoading').style.display = 'none'
+        document.querySelector('.productSuccess').style.display = 'block'
+    }
+}
+productBtn.onclick = productFunc;
+
+
+
+
+
+
+
+/*$('.privateSaleForm').submit(function(){
+    $.post("https://api.transfi.net/api/user-list",
+        {
+            headers: { 'Content-Type': 'application/json' },
+            type: 'private_sale',
+            first_name:'Emmanuel',
+            last_name:'Tudje',
+            email: 'emmanueltudje@gmail.com'  
+        },
+        function(message){
+            alert(message)
+        }
+    )
+})
+*/
+
 $(document)
     .ready(function () {
         $('.owl-carousel').owlCarousel({
@@ -174,41 +275,5 @@ update = function () {
     }
     requestAnimationFrame(update);
 };
-requestAnimationFrame(update);
 
 
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});

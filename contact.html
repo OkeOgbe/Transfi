@@ -120,7 +120,6 @@
                 </div>
             </div>
 
-
             <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content ">
@@ -131,7 +130,7 @@
                 </div>
               </div>
             
-            
+             
             
             <div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -140,23 +139,24 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true defaultBtn textIsBlue">&times</span>
                       </button>
-                    <form>
+                      <a class="defaultBtn privateSaleLoading w-100 " style="display:none">Adding to List</a>
+                      <a class="defaultBtn privateSaleSuccess w-100 " style="display:none"></a>
+                    <form class='privateSaleForm'>
+                        <input type="hidden" name='type' value='private_sale' class="form-control emailInput" id="type" required>
                       <div class="form-group">
-                        <label for="recipient-name" class="col-form-label textIsBlue">First Name:</label>
-                        <input type="text" class="form-control emailInput" id="recipient-name">
+                        <label for="firstName" class="col-form-label textIsBlue">First Name:</label>
+                        <input type="text"  name='first_name' class="form-control emailInput" id="firstName">
                       </div>
                       <div class="form-group">
-                        <label for="recipient-name" class="col-form-label textIsBlue">Last Name:</label>
-                        <input type="text" class="form-control emailInput" id="recipient-name">
+                        <label for="lastName" class="col-form-label textIsBlue">Last Name:</label>
+                        <input type="text"  name='last_name' class="form-control emailInput" id="lastName">
                       </div>
                       <div class="form-group">
-                        <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
-                        <input type="email" class="form-control emailInput" id="recipient-name">
+                        <label for="email" class="col-form-label textIsBlue">Email:</label>
+                        <input type="email"  name='email' class="form-control emailInput" id="email" required>
                       </div>
+                      <button type="button" class="privateSaleBtn defaultBtn w-100">Join Private Sales</button>
                     </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="defaultBtn w-100">Join Private Sales</button>
                   </div>
                 </div>
               </div>
@@ -169,19 +169,21 @@
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true defaultBtn textIsBlue">&times</span>
                         </button>
-                      <form>
+                        <a class="defaultBtn productLoading w-100" style="display:none">Adding to List</a>
+                      <a class="defaultBtn productSuccess w-100 " style="display:none"></a>
+                      <form class = "productForm">
                         <div class="form-group">
                           <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
-                          <input type="email" class="form-control emailInput" id="recipient-name">
+                          <input type="email" class="form-control emailInput" id="productEmail">
                         </div>
+                        <button type="button" class="defaultBtn productBtn w-100">Join Waiting List</button>
                       </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="defaultBtn w-100">Join Waiting List</button>
                     </div>
                   </div>
                 </div>
               </div>
+            
+            
             
 
             <!------------- Main Content-------------->
