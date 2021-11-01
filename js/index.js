@@ -1,4 +1,21 @@
 
+const open = document.querySelector('.menuIcon')
+const close = document.querySelector('.closes')
+const openFunc = ()=>{
+    console.log('working')
+    const nav = document.querySelector('.nav__mobileMenu')
+    nav.classList.add('active')
+}
+const closeFunc = ()=>{
+    console.log('working')
+    const nav = document.querySelector('.nav__mobileMenu')
+    nav.classList.remove('active')
+}
+open.onclick = openFunc
+close.onclick = closeFunc
+
+
+
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')
 const formFunc = async ()=>{
     const type =  document.querySelector('#type').value
@@ -11,7 +28,7 @@ const formFunc = async ()=>{
         headers: { 'Content-Type': 'application/json',
                     Accept:'application/json'
                 },
-        method:'POST',
+                method:'POST',
         body:JSON.stringify({
             type: type,
             first_name: firstName,
@@ -122,7 +139,8 @@ $(document)
     });
     
 
-$(".menuIcon").on("click", () => {
+$("#menuIcon").on("click", () => {
+    console.log('working')
     $(".nav__mobileMenu").addClass('active')
 })
 
