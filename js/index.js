@@ -1,4 +1,21 @@
 
+
+const open = document.querySelector('.menuIcon')
+const close = document.querySelector('.closes')
+const openFunc = ()=>{
+    console.log('working')
+    const nav = document.querySelector('.nav__mobileMenu')
+    nav.classList.add('active')
+}
+const closeFunc = ()=>{
+    console.log('working')
+    const nav = document.querySelector('.nav__mobileMenu')
+    nav.classList.remove('active')
+}
+open.onclick = openFunc
+close.onclick = closeFunc
+
+
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'pie',
@@ -75,30 +92,6 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-
-
-
-
-
-
-
-
-
-const open = document.querySelector('.menuIcon')
-const close = document.querySelector('.closes')
-const openFunc = ()=>{
-    console.log('working')
-    const nav = document.querySelector('.nav__mobileMenu')
-    nav.classList.add('active')
-}
-const closeFunc = ()=>{
-    console.log('working')
-    const nav = document.querySelector('.nav__mobileMenu')
-    nav.classList.remove('active')
-}
-open.onclick = openFunc
-close.onclick = closeFunc
-
 
 
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')
@@ -224,14 +217,14 @@ $(document)
     });
     
 
-$("#menuIcon").on("click", () => {
+/*$("#menuIcon").on("click", () => {
     console.log('working')
     $(".nav__mobileMenu").addClass('active')
 })
 
 $('.closes').on('click', () => {
     $('.nav__mobileMenu').removeClass('active')
-})
+})*/
 
 $(window).on('scroll', () => {
     if ($(window).scrollTop() > 200) {
