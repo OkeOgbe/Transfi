@@ -63,10 +63,10 @@ const myChart = new Chart(ctx, {
         responsive: true,
         plugins:{
             legend: {
-            position: 'right',
+            position: 'top',
             labels: {
                 font:{
-                    size:14,
+                    size:16,
                     family:'Work-sans'
                 },
                 boxheight:30,
