@@ -66,7 +66,7 @@ const myChart = new Chart(ctx, {
             position: 'right',
             labels: {
                 font:{
-                    size:18,
+                    size:14,
                     family:'Work-sans'
                 },
                 boxheight:30,
