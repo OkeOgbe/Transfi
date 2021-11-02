@@ -70,7 +70,7 @@ const myChart = new Chart(ctx, {
                     family:'Work-sans'
                 },
                 boxheight:30,
-                boxWidth: 30,
+                boxWidth: 10,
                 padding: 20
         }
         }
