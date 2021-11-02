@@ -1,4 +1,89 @@
 
+const ctx = document.getElementById('myChart');
+const myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: [
+            'Private investors', 
+            'Private Sale', 
+            'Pre-sale', 
+            'Airdrop Reward', 
+            'Strategic Partnership', 
+            'Marketing and Buyback',
+            'Team Token',
+            'Burn',
+            'Liquidity'
+        ],
+        datasets: [{
+            label: 'Tokens',
+            data: [5, 
+                10, 
+                30, 
+                5, 
+                10, 
+                15,
+                10,
+                5,
+                5 
+                ],
+            backgroundColor: [
+                '#03C5FF',
+                '#FFCC3E',
+                '#67FA97',
+                '#FF3E72',
+                '#FFCC3E',
+                '#03C5EE',
+                '#AD00FE',
+                '#FF3E72',
+                'black'
+            ],
+            borderWidth: 1,
+            weight:1,
+            raduis:'10%'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins:{
+            legend: {
+            position: 'right',
+            labels: {
+                font:{
+                    size:18,
+                    family:'Work-sans'
+                },
+                boxheight:30,
+                boxWidth: 30,
+                padding: 20
+        }
+        }
+        },
+        scales: {
+            x :{
+                display:false,
+                grid:{
+                    display: false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                display:false,
+                grid:{
+                    display:false
+                }
+            }
+        }
+    }
+});
+
+
+
+
+
+
+
+
+
 const open = document.querySelector('.menuIcon')
 const close = document.querySelector('.closes')
 const openFunc = ()=>{

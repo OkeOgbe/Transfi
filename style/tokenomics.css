@@ -119,6 +119,11 @@
     min-height:30vh
 }
 
+.pieChart{
+    width:50%;
+    margin:0 auto;
+}
+
 @media (max-width: 768px) {
     .marginTop {
         margin-top: 0;
@@ -143,5 +148,10 @@
    canvas{
        height:400;
    }
+   .pieChart{
+    width:280px;
+    height:280px;
+    margin:0 auto;
+}
 
 }   

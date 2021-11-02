@@ -203,80 +203,11 @@
 
 
 
-
+            <div class='pieChart'>
             <div class='container'> 
-            <canvas class='textIsBlue' id="myChart" width="400" height="200"></canvas>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
-            <script>
-            const ctx = document.getElementById('myChart');
-            const myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: [
-                        'Private investors', 
-                        'Private Sale', 
-                        'Pre-sale', 
-                        'Airdrop Reward', 
-                        'Strategic Partnership', 
-                        'Marketing and Buyback',
-                        'Team Token',
-                        'Burn',
-                        'Liquidity'
-                    ],
-                    datasets: [{
-                        label: 'Tokens',
-                        data: [5, 
-                            10, 
-                            30, 
-                            5, 
-                            10, 
-                            15,
-                            10,
-                            5,
-                            5 
-                            ],
-                        backgroundColor: [
-                            'blue',
-                            'orange',
-                            'green',
-                            'pink',
-                            'orange',
-                            'blue',
-                            'purple',
-                            'pink',
-                            'black'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132)',
-                            'rgba(54, 162, 235)',
-                            'rgba(255, 206, 86)',
-                            'rgba(75, 192, 192)',
-                            'rgba(153, 102, 255)',
-                            'rgba(255, 159, 64)'
-                        ],
-                        borderWidth: 0.5,
-                        responsive: true,
-                        raduis:'10%'
-                    }]
-                },
-                options: {
-                    legend: {
-                        labels: {
-                             // This more specific font property overrides the global property
-                        fontColor: 'blue',
-                        fontSize:18
-                     }
-                 },
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-            </script>
+            <canvas class='textIsBlue' id="myChart" width="200" height="200"></canvas>
             </div>
-
+        </div>
 
 
 
@@ -916,6 +847,7 @@
         <script>
             AOS.init();
         </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
         <script src='./js/index.js'></script>
         <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
