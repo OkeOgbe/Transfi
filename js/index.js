@@ -15,7 +15,7 @@ const closeFunc = ()=>{
 open.onclick = openFunc
 close.onclick = closeFunc
 
-
+/*
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'pie',
@@ -92,7 +92,7 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-
+*/
 
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')
 const formFunc = async ()=>{
