@@ -274,6 +274,13 @@ footer .logo img {
     align-items: center;
 }
 
+.alignOnlyCenter {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
 .vAlign {
     text-align: center;
 }
