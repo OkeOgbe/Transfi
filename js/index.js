@@ -15,6 +15,29 @@ const closeFunc = ()=>{
 open.onclick = openFunc
 close.onclick = closeFunc
 
+$(document)
+    .ready(function () {
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            loop: true,
+            dots: false,
+            items: 3,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+    
+
 /*
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
@@ -195,27 +218,7 @@ productBtn.onclick = productFunc;
 })
 */
 
-$(document)
-    .ready(function () {
-        $('.owl-carousel').owlCarousel({
-            autoplay: true,
-            loop: true,
-            items: 3,
-            center: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        });
-    });
-    
+
 
 /*$("#menuIcon").on("click", () => {
     console.log('working')
