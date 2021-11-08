@@ -67,11 +67,11 @@
     margin: 0 auto;
 }
 
-.guide .dot{
-    width: 20px;
+.guideStep .dot {
+    width: 15px;
     position: absolute;
     transform: translate(13rem, 0);
-    height: 20px;
+    height: 15px;
     background-color: #D1D1D1;
     transition: all 0.6s ease;
 }
@@ -97,6 +97,7 @@
 .owl-item.active.center .dot{
     background-color: var(--defaultBlue);
     box-shadow: 0px 0px 1px 6px #0000ff3d;
+    margin: 0 auto;
 }
 
 .owl-item.active.center h2{
