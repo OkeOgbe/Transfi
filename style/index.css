@@ -351,6 +351,15 @@ ul {
     box-shadow: 0 4px 8px 3px #0000001A;
 }
 
+.defaultBtn2 {
+    background: var(--defaultBlue);
+    padding: 0.7rem 0.8rem;
+    text-align: center;
+    color: #ffff !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 3px #0000001A;
+}
+
 .transparentBtn {
     background: transparent;
     border: 1px solid var(--defaultBlue);
