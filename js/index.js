@@ -1,4 +1,33 @@
+// Set the date we're counting down to
+let countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
 
+// Update the count down every 1 second
+let x = setInterval(function() {
+
+  // Get today's date and time
+  let now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  let distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days ;
+  document.getElementById("hours").innerHTML = hours; 
+  document.getElementById("min").innerHTML = minutes ;
+  document.getElementById("sec").innerHTML = seconds 
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
 const open = document.querySelector('.menuIcon')
 const close = document.querySelector('.closes')
@@ -117,6 +146,7 @@ const myChart = new Chart(ctx, {
 });
 */
 
+/*
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')
 const formFunc = async ()=>{
     const type =  document.querySelector('#type').value
@@ -125,16 +155,15 @@ const formFunc = async ()=>{
     const email =  document.querySelector('#email').value
     document.querySelector('.privateSaleForm').style.display = 'none'
     document.querySelector('.privateSaleLoading').style.display = 'block'
-     const response = await fetch('https://api.transfi.net/api/user-list', {
+     const response = await fetch("https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=63b645c9e1", {
         headers: { 'Content-Type': 'application/json',
                     Accept:'application/json'
                 },
                 method:'POST',
         body:JSON.stringify({
-            type: type,
-            first_name: firstName,
-            last_name: lastName,
-            email: email
+            FNAME: firstName,
+            LNAME: lastName,
+            EMAIL: email
         })    
     })
     if (response.ok){
@@ -195,7 +224,7 @@ const productFunc = async ()=>{
     }
 }
 productBtn.onclick = productFunc;
-
+*/
 
 
 

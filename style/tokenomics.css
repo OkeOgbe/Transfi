@@ -126,6 +126,10 @@
     margin:0 auto;
 }
 
+.border{
+    border: 1px solid black
+}
+
 @media (max-width: 768px) {
     .marginTop {
         margin-top: 0;
