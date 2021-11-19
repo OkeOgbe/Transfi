@@ -44,7 +44,8 @@
             rel="stylesheet"
             href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-         <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/tokenomics.css">
     </head>
     <body>
         <div class="">
@@ -59,11 +60,11 @@
                                 <a href='./index.html' class="logo">
                                     <img src="./images/logo.png" alt=""/>
                                 </a>
-                                <div class="sectionText navLinkHolder spaceBetween ml-5">
+                                <div class="sectionText navLinkHolder  ml-5">
 
-                                    <!-- <a href="/" class="textIsBlue">About Us</a> -->
-                                    <a href="./tokenomics.html" class="textIsBlue">The Token</a>
-                                    <a href="./airdrop.html" class="textIsBlue">Airdrop</a>
+                                    <!-- <a href="/" class="textIsBlue">About Us</a>
+                                    <a href="./tokenomics.html" class="textIsBlue">The Token</a> -->
+                                    <a href="./airdrop.html" class="textIsBlue mr-5">Airdrop</a>
                                     <a href="./contact.html" class="textIsBlue">Contact us</a>
                                 </div>
                             </div>
@@ -72,11 +73,12 @@
                                 <!-- Button trigger modal -->
     <a href='https://t.me/TRANSFI_OFFICIAL'>
     <button type="button" class="mr-5 transparentBtn"data-toggle="modal" data-target="#exampleModal">
-           join our Community
+           join Our Community
     </button>
     </a>
+    <!--
   <button type="button" class="defaultBtn" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">
-    Join Private Sales</button>
+    Join Private Sales</button>-->
                 
                             </div>
                         </div>
@@ -103,26 +105,31 @@
                                     <a href="./index.html" class="textIsBlue">Home</a>
                                 </div>
 
-                                <!-- <div class="pt-3 pb-3">
+                                <!-- 
+                                <div class="pt-3 pb-3">
                                     <a href="/" class="textIsBlue">About Us</a>
-                                </div> -->
+                                </div> 
+                                -->
 
                                 <div class="pt-3 pb-3">
                                     <a href="./airdrop.html" class="textIsBlue">Airdrop</a>
                                 </div>
 
+                                <!--
                                 <div class="pt-3 pb-3">
                                     <a href="./tokenomics.html" class="textIsBlue">The Token</a>
                                 </div>
+                                -->
 
                                 <div class="pt-3 pb-3">
                                     <a href="./contact.html" class="textIsBlue">Contact us</a>
                                 </div>
 
                                 <div class="pt-3 pb-3">
-                                        <a href='https://t.me/TRANSFI_OFFICIAL' class="textIsBlue">join Our Community</a>
+                                        <a href='https://t.me/TRANSFI_OFFICIAL' class="textIsBlue">join our community</a>
                                 </div>
 
+                                
                                 <div class="pt-3 pb-3">
                                     <a  class="textIsBlue" data-toggle="modal" data-target="#privateSales">
                                         Join Private Sales
@@ -153,10 +160,40 @@
 <div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <div class="modal-body">
+        <button type='button' class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true defaultBtn textIsBlue">&times</span>
           </button>
+           <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=63b645c9e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+        <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="emailInput form-control required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="emailInput form-control" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="emailInput form-control" id="mce-LNAME">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e918fbfa2a2d22f779e8eb70_63b645c9e1" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Join Private Sales" name="subscribe" id="mc-embedded-subscribe" class="defaultBtn mt-2"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+           <!--
           <a class="defaultBtn privateSaleLoading w-100 " style="display:none">Adding to List</a>
           <a class="defaultBtn privateSaleSuccess w-100 " style="display:none"></a>
         <form class='privateSaleForm'>
@@ -175,6 +212,7 @@
           </div>
           <button type="button" class="privateSaleBtn defaultBtn w-100">Join Private Sales</button>
         </form>
+    -->
       </div>
     </div>
   </div>
@@ -184,9 +222,30 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true defaultBtn textIsBlue">&times</span>
             </button>
+            <!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=ec6b53dfa8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+    <input type="email" value="" name="EMAIL" class="emailInput form-control required email" id="mce-EMAIL">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e918fbfa2a2d22f779e8eb70_ec6b53dfa8" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Get updates on our products" name="subscribe" id="mc-embedded-subscribe" class="button defaultBtn mt-3"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            <!--
             <a class="defaultBtn productLoading w-100" style="display:none">Adding to List</a>
           <a class="defaultBtn productSuccess w-100 " style="display:none"></a>
           <form class = "productForm">
@@ -196,13 +255,14 @@
             </div>
             <button type="button" class="defaultBtn productBtn w-100">Join Waiting List</button>
           </form>
+      -->
         </div>
       </div>
     </div>
   </div>
 
 
-            <div class="">
+                <div class="">
 
                 <div id="particles-js"></div>
 
@@ -219,14 +279,20 @@
                                         to enjoy a fair and efficient transport system and other related services 
                                         across the globe using Blockchain Technology.
                                     </p>
+                                     <!--
                                     <div class="mt-4 row">
-                                        <a href="#whitePaper" class="defaultBtn mb-3 mx-3 col-lg-6">Learn More
+                                       
+                                        <a href="#whitePaper" class="defaultBtn mb-3 mx-3 col-lg-5">Learn More
                                             <i class="fas fa-arrow-down mx-1"></i>
                                         </a>
-                                        <a class="defaultBtn col-lg-6" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">Join Private Sales
-                                                <i class="fas fa-arrow-right mx-2"></i>
+                                        -->
+                                        <a class="defaultBtn w-50 my-5" data-toggle="modal" data-target="#privateSales" data-whatever="@mdo">
+                                            Join Private Sales
+                                            <i class="fas fa-arrow-right mx-1"></i>
                                         </a>
+                                    <!--
                                     </div>
+                                -->
                                 </div>
                             </div>
                         
@@ -239,7 +305,7 @@
 
             </div>
 
-            <section class="container sectionHeight--mid alignOnly pt-4 pb-3">
+            <section class="container sectionHeight--mid alignOnly pt-4 ">
                 <div class="row">
                     <div class="col-lg-6 sectionHeight--mid alignOnly">
                         <div class="textHolder">
@@ -271,7 +337,186 @@
                 </div>
             </section>
 
-            <section class="mt-3 mb-3 token sectionHeight container">
+
+            <section class="sectionHeight benefitsBg alignOnly">
+                <div class="container">
+                    <div class="row noPad">
+                        <div class="col-lg-6">
+                            <div class="imgHolder center  sectionHeight">
+                                <img src="./images/benefits.png" class="w-100" alt="benefits">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 alignOnly">
+                            <div class="textHolder p-3">
+                                <h2 class="sectionHead textIsBlue textIsBold">We're as borderless as our payments.</h2>
+                                <p class="sectionText">
+                                    We proudly facilitate faster growth for global companies powered by
+                                    blockchain.Transfi is designed to eliminate the problem transport companies face
+                                    with payment service providers through the introduction of decentralized method
+                                    of payment (Transfi). This seamless payment is built on binance smart chain and
+                                    it is accessible to all, thus making payments for transport services accessible
+                                    to both transportation Vendors and Customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-5 guide">
+                <div class="">
+                    <h2 class="vAlign textIsBlue sectionHead textIsBold mb-2">Transfi <span class='textIsYellow'>Roadmap</span></h2>
+                    <h4 class="vAlign textIsGray sectionText--mid textIsBold mb-4">A guide to Token timeline and milestones</h4>
+                    <div class="sectionHeight--short alignOnly">
+                        <div class="owl-carousel">
+
+                            <div class="vAlign guideStep">
+                                <div class="w-100 pt-3">
+                                    <h2 class="sectionText--mid textIsBold pb-4">1ST - 9TH AUG, 2021</h2>
+                                    <div class="dot"></div>
+                                    <hr>
+                                    <div class="pt-3 textHolder">
+                                        <p class="sectionText textIsBlue">Project Conceptualization</p>
+                                        <p class="sectionText--small textIsGray">
+                                            This involves the recruitment and gathering of team members
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vAlign guideStep">
+                                <div class="w-100 pt-3">
+                                    <h2 class="sectionText--mid textIsBold pb-4">9TH - 31ST AUG, 2021</h2>
+                                    <div class="dot"></div>
+                                    <hr>
+                                    <div class="pt-3 textHolder">
+                                        <p class="sectionText textIsBlue">Development and Deployment</p>
+                                        <p class="sectionText--small textIsGray">
+                                            Website development , Token development and deployment, Socials media
+                                            announcements and Documentations
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vAlign guideStep">
+                                <div class="w-100 pt-3">
+                                    <h2 class="sectionText--mid textIsBold pb-4">1ST SEPT - 1ST NOV, 2021</h2>
+                                    <div class="dot"></div>
+                                    <hr>
+                                    <div class="pt-3 textHolder">
+                                        <p class="sectionText textIsBlue">Initial Marketing</p>
+                                        <p class="sectionText--small textIsGray">
+                                            Working on partnerships, Community building and Airdrop
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vAlign guideStep">
+                                <div class="w-100 pt-3">
+                                    <h2 class="sectionText--mid textIsBold pb-4">1ST NOV - 31ST DEC, 2021</h2>
+                                    <div class="dot"></div>
+                                    <hr>
+                                    <div class="pt-3 textHolder">
+                                        <p class="sectionText textIsBlue">
+                                            ICO</p>
+                                        <p class="sectionText--small textIsGray">
+                                            This phase involves Marketing phase 2, Airdrop distribution , Presale and Social
+                                            campaign (Untapped Africa: A blockchain conference across Africa).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bgMap--light sectionHeight--short border mb-5 mt-4">
+                <div class="container">
+                    <div class="row pt-5">
+                            <div class='col-lg-6 textHolder p-3'>
+                                <h2 class='sectionHead textIsBlue'>Token Info</h2>
+                                <p class='sectionText mt-3 textIsGray'>
+                                    The transfi token is the native utility token of the transfi platform and ecosystem
+                                    it would be deplored on the Binance Smart Chain and fully comply with BEP20 standards.
+                                </p>
+                                <div class='row ml-1 mt-5'>
+                                        <button class="col-sm-5 mr-1 transparentBtn1"data-toggle="modal" data-target="#exampleModal">
+                                               Buy Token
+                                               <i class="fas fa-arrow-right"></i>
+                                        </button>
+
+                                        
+                                        <button class="col-sm-5  defaultBtn1" data-toggle="modal" data-target="#privateSales">
+                                        Join Private Sales
+                                        <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                </div>
+                            </div>
+                        <div class="col-lg-6">
+                            <div class="imgHolder center">
+                                <img src="./images/binanceToTransfi.png" class="w-100" alt="binanceToTransfi">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sectionHeight benefitsBg alignOnly">
+                <div class="container">
+                    <div class="row noPad">
+                        <div class="col-lg-5">
+                            <div class="imgHolder center ">
+                                <img src="./images/pie chart.png" class="w-100" alt="piechart">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+                            <h2 class='textIsBlue mb-2 mt-3 ml-4 textIsBold sectionHead'>Tokenomics Distribution</h2>
+                            <h4 class='textIsGray sectionText--midlevel ml-4'>The Numbers Behind Our Token</h4>
+                            <div class="textHolder mt-5">
+                                <div class="col-lg-12 alignOnly">
+                                    <div class="dot pink  mx-2"></div>
+                                    <div>
+                                        <p class="sectionText--short">Pre-Sale
+                                            <br/>
+                                            <span class="textIsBold">(30%)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 alignOnly">
+                                    <div class="dot d_orange mx-2"></div>
+                                    <p class="sectionText--short mt-2">Marketing and Buyback
+                                        <br/>
+                                        <span class="textIsBold">(15%)</span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 alignOnly">
+                                    <div class="dot blue mx-2"></div>
+                                    <p class="sectionText--short mt-2">
+                                        Private Sale, Liquidity, Team Token and Strategic Partnership
+                                        <br/>
+                                        <span class="textIsBold">(10%)</span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 alignOnly">
+                                    <div class="dot green mx-2"></div>
+                                    <p class="sectionText--short mt-2">Private Sale
+                                        <br/>
+                                        <span class="textIsBold">(5%)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class=" mt-5 mb-3 token sectionHeight--short">
+                <div class=''>
                 <div class="row no-gutters">
                     <div class="col-lg-6 countdown center">
                         <div class="">
@@ -279,31 +524,27 @@
                                 <img src="./images/token.png" class="w-100" alt="">
                             </div>
 
-                            <!-- <div class="mt-5">
-                                <div class="center ">
+                            <div class="mt-5">
+                                <div class="ml-5">
                                     <img src="/images/count.png" alt="">
-                                    <h2 class="sectionText textIsBlue mb-0 ml-2">Token Countdown</h2>
+                                    <h2 class=" sectionText--mid textIsBlue mb-0 ml-2">Public Sale Countdown</h2>
                                 </div>
 
                                 <div class="mt-3 center">
-                                    <h2 class="sectionHead textIsBlue">
-                                        30
-                                        <span class='sectionText--mid'>Days</span>
+                                    <h2 id="days" class="sectionHead textIsBlue">
                                     </h2>
-                                    <h2 class="sectionHead textIsBlue ml-3">
-                                        8
-                                        <span class='sectionText--mid'>Hrs</span>
+                                    <h3 class='textIsGray ml-2 sectionText--midlevel'>Days</h3>
+                                    <h2 id='hours' class="sectionHead textIsBlue ml-3">
                                     </h2>
-                                    <h2 class="sectionHead textIsBlue ml-3">
-                                        25
-                                        <span class='sectionText--mid'>Mins</span>
+                                    <h3 class='textIsGray ml-2 sectionText--midlevel'>Hrs</h3>
+                                    <h2 id='min' class="sectionHead textIsBlue ml-3">
                                     </h2>
-                                    <h2 class="sectionHead textIsBlue ml-3">
-                                        20
-                                        <span class='sectionText--mid'>Sec</span>
+                                    <h3 class='textIsGray ml-2 sectionText--midlevel'>Mins</h3>
+                                    <h2 id='sec' class="sectionHead textIsBlue ml-3">
                                     </h2>
+                                    <h3 class='textIsGray ml-2 sectionText--midlevel'>Secs</h3>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -336,6 +577,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
 
             <!-- <section class="container sectionHeight alignOnly partners">
@@ -383,7 +625,7 @@
                 </div>
             </section> -->
 
-            <section class="mockup sectionHeight--mid alignOnly">
+            <section class="mockup sectionHeight alignOnly">
                 <img src="./images/mapBg.png" class="bgImg" alt="">
                 <div class="container">
                     <div
@@ -393,7 +635,7 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row w-100">
-                                    <div class="col-lg-6 alignOnly sectionHeight">
+                                    <div class="col-lg-6 alignOnly sectionHeight--short">
                                         <div class="textHolder" style="padding: .2rem;">
                                             <p class="sectionText mb-1">API Integration</p>
                                             <h2 class="sectionHead textIsBlue textIsBold" style="line-height: 1.4;">
@@ -416,7 +658,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 sectionHeight alignOnly">
+                                    <div class="col-lg-6 sectionHeight--short alignOnly">
                                         <div class="imgHolder center w-100">
                                             <img src="./images/apiIntegration.png" class="w-100" alt="">
                                         </div>
@@ -494,31 +736,6 @@
                 </div>
             </section>
 
-            <section class="sectionHeight benefitsBg alignOnly">
-                <div class="container">
-                    <div class="row noPad">
-                        <div class="col-lg-6">
-                            <div class="imgHolder center  sectionHeight">
-                                <img src="./images/benefits.png" class="w-100" alt="benefits">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 alignOnly">
-                            <div class="textHoder p-3">
-                                <h2 class="sectionHead textIsBlue textIsBold">We're as borderless as our payments.</h2>
-                                <p class="sectionText">
-                                    We proudly facilitate faster growth for global companies powered by
-                                    blockchain.Transfi is designed to eliminate the problem transport companies face
-                                    with payment service providers through the introduction of decentralized method
-                                    of payment (Transfi). This seamless payment is built on binance smart chain and
-                                    it is accessible to all, thus making payments for transport services accessible
-                                    to both transportation Vendors and Customers.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="sectionHeight globe  alignOnly">
                 <div class="w-100">
                     <div class="row no-gutters">
@@ -559,7 +776,7 @@
                     </div>
 
                     <div class="row reasons-why">
-                        <div class="col-lg-4 mt-4">
+                        <div  class="col-lg-4 mt-4">
                             <div class="why__card vAlign">
                                 <div class="icon textIsBlue center mb-4">
                                     <img src="./images/speed.png" alt="">
@@ -734,11 +951,30 @@
                         </div>
                         <div class="col-lg-6 mt-3">
                             <div class="">
+                                <!--
                                 <form id='form' class="alignOnly mBlock">
                                     <input id="mailingMail" name='email' type="email" placeholder="E-mail address">
                                     <button id='button' type = 'button' class="defaultBtn mailingListBtn vAlign">
                                         join our mailing list</button>
                                 </form>
+                            -->
+                              <!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=2e1a3f47d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="alignOnly validate" target="_blank" novalidate>
+
+    <input placeholder="E-mail address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+<!--
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e918fbfa2a2d22f779e8eb70_2e1a3f47d9" tabindex="-1" value=""></div>-->
+    <input type="submit" value="Join our mailing list" name="subscribe" id="mc-embedded-subscribe" class="defaultBtn w-100 vAlign">
+</form>
+</div>
+
+<!--End mc_embed_signup-->
                                 
                             </div>
                         </div>
@@ -847,7 +1083,7 @@
             AOS.init();
         </script>
         <script src='./js/index.js'></script>
-        <script src="/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
     </body>
 </html>
