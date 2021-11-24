@@ -346,7 +346,7 @@ ul {
     padding: 0.7rem 0.8rem;
     text-align: center;
     color: #ffff !important;
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 3px #0000001A;
 }
@@ -373,6 +373,8 @@ ul {
     border: 1px solid var(--defaultBlue);
     padding: 0.7rem 0.8rem;
     text-align: center;
+    border-radius: 10px;
+    width: 95%;
     color: var(--defaultBlue);
 }
 
@@ -746,6 +748,18 @@ ul {
 
 
 @media (max-width: 768px) {
+
+    .defaultBtn1 {
+        background: var(--defaultBlue);
+        padding: 0.7rem 0.8rem;
+        text-align: center;
+        color: #ffff !important;
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 3px #0000001A;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
 
     .sectionHead--big {
         font-size: 2rem;
