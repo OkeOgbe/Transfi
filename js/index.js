@@ -67,7 +67,6 @@ $(document)
     });
     
 
-/*
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'pie',
@@ -100,8 +99,8 @@ const myChart = new Chart(ctx, {
                 '#FFCC3E',
                 '#67FA97',
                 '#FF3E72',
-                '#FFCC3E',
-                '#03C5EE',
+                '#FF6B3E',
+                '#3E72FF',
                 '#AD00FE',
                 '#FF3E72',
                 'black'
@@ -113,9 +112,11 @@ const myChart = new Chart(ctx, {
     },
     options: {
         responsive: true,
+        radius:'100%',
         plugins:{
             legend: {
-            position: 'top',
+            position: 'bottom',
+            display:false,
             labels: {
                 font:{
                     size:16,
@@ -144,7 +145,6 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-*/
 
 /*
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')

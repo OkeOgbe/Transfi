@@ -1,8 +1,6 @@
 @import url('./index.css');
 
-.nav{
-    position: relative;
-}
+
 /*
 .hero{
     background-image: url('../images/roadmapBg.png') ;
@@ -121,7 +119,6 @@
 }
 
 .pieChart{
-    display:none;
     width:50%;
     margin:0 auto;
 }

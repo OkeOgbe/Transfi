@@ -136,6 +136,7 @@ textarea {
 
 .sectionHead {
     font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .sectionHead--big {
@@ -162,12 +163,15 @@ textarea {
     min-height: 100vh;
 }
 
+.marginTop70{
+    margin-top:70px;
+}
+
 .nav.fixed,
 .nav__mobile.fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
     z-index: 999;
     box-shadow: 0 5px 15px 0 #eae1e17a;
 }
@@ -229,13 +233,11 @@ textarea {
 }
 
 .nav {
-    position: absolute;
+    position:absolute;
     padding: 1.5rem 0;
     width: 100%;
     right: 0;
     left: 0;
-    z-index: 999;
-    opacity: 1;
 }
 
 .navLinkHolder {
@@ -393,6 +395,8 @@ ul {
 .mockup .bgImg {
     position: absolute;
     right: 0;
+    width:300px;
+    height:518px;
 }
 
 .why .textHolder {
@@ -447,6 +451,13 @@ ul {
 
 .bgBlue {
     background-image: url('../images/blueMap.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgHero {
+    background-image: url('../images/herobg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -745,7 +756,37 @@ ul {
     margin: 0 auto;
 }
 
+.pieChart{
+    width:100%;
+}
 
+.useCase{
+    background:#F8FDFF;
+    box-shadow: 0px 16px 20px rgba(141, 167, 200, 0.14);
+    border-radius: 24px;
+    height:70vh;
+}
+
+.questions{
+    background:#FBFBFB;
+    box-shadow: 0px 6px 4px rgba(141, 167, 200, 0.1);
+    width:100%;
+}
+
+.gif{
+    box-shadow: 0 4px 10px 3px #C4C4C433;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 70px auto;
+    background-color: #0096c72b;
+}
+
+.countDown{
+    background:#fff;
+    margin-bottom:30px;
+    border-radius:20px;
+}
 
 @media (max-width: 768px) {
 
@@ -767,6 +808,7 @@ ul {
 
     .sectionHead {
         font-size: 1.3rem;
+        line-height: 2rem;
     }
 
     .mBlock {
@@ -878,9 +920,15 @@ ul {
         max-height: 45vh;
     }
 
-.review{
-    width: 90%;
-}
+    .review{
+        width: 90%;
+    }
+
+    .pieChart{
+        width:100%;
+        margin:0 auto;
+    }
+
 
 }
  .globe h2{
