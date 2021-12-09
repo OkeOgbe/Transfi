@@ -163,8 +163,8 @@ textarea {
     min-height: 100vh;
 }
 
-.marginTop70{
-    margin-top:70px;
+.heroMarginTop{
+    margin-top:110px;
 }
 
 .nav.fixed,
@@ -790,6 +790,15 @@ ul {
 
 @media (max-width: 768px) {
 
+    .globeImage{
+        display:none;
+    }
+
+    .heroMarginTop{
+        margin-top:40px;
+        margin-bottom:60px;
+    }
+
     .defaultBtn1 {
         background: var(--defaultBlue);
         padding: 0.7rem 0.8rem;
@@ -863,7 +872,7 @@ ul {
     }
 
     .hero .sectionHeight--mid {
-        min-height: 50vh;
+        min-height: 80vh;
     }
 
     .sectionHeight {

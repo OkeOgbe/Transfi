@@ -200,8 +200,8 @@
 
 <section class="hero fullHeight bgHero alignOnly">
     <div class="container">
-        <div class="row marginTop70">   
-            <div class="col-lg-6 mt-5 sectionHeight--mid">
+        <div class="row heroMarginTop">   
+            <div class="col-lg-6 sectionHeight--mid">
                 <div class="textHolder">
                     <h2 class="sectionHead--big textIsBlue textIsBold" style="line-height: 1.5;">
                         A Blockchain-Based Ecosystem For Better Transport Solutions in Africa</h2>
@@ -338,12 +338,12 @@
                         The transfi token is the native utility token of the transfi platform and ecosystem
                         it would be deplored on the Binance Smart Chain and fully comply with BEP20 standards.
                     </p>
-                    <div class='row ml-1 alignOnly mt-5'>
-                            <button class="col-sm-5 mr-1 transparentBtn1"data-toggle="modal" data-target="#exampleModal">
+                    <div class='row noPad ml-1 alignOnly mt-5'>
+                            <button class="col-sm-6 col-lg-5 mr-1 transparentBtn1"data-toggle="modal" data-target="#exampleModal">
                                    Buy Token
                                    <i class="fas fa-arrow-right"></i>
                             </button>  
-                            <button class="col-sm-5  defaultBtn1" data-toggle="modal" data-target="#privateSales">
+                            <button class="col-sm-6 col-lg-5  defaultBtn1" data-toggle="modal" data-target="#privateSales">
                             Join Private Sales
                             <i class="fas fa-arrow-right"></i>
                             </button>
@@ -360,19 +360,19 @@
 
 <section class='container'>
     <div class='row'>
-        <div class='col-3'>
+        <div class='col-lg-3 col-6'>
             <p class='sectionText--midlevel textIsBlue'>Token Name</p>
             <p class='sectionText--midlevel textIsYellow textIsBold'>Transfi Token</p>
         </div>
-        <div class='col-3'>
+        <div class='col-lg-3 col-6'>
             <p class='sectionText--midlevel textIsBlue' >Token Type</p>
             <p class='sectionText--midlevel textIsYellow textIsBold'>BEP20</p>
         </div>
-        <div class='col-3'>
+        <div class='col-lg-3 col-6'>
             <p class='sectionText--midlevel textIsBlue'>Market Cap</p>
             <p class='sectionText--midlevel textIsYellow textIsBold'>100,000,000 TFI</p>
         </div>
-        <div class='col-3'>
+        <div class='col-lg-3 col-6'>
             <p class='sectionText--midlevel textIsBlue'>Circulating</p>
             <p class='sectionText--midlevel textIsYellow textIsBold'>Locked</p>
         </div>
@@ -386,27 +386,6 @@
         <div class='mt-5 row'>   
             <div class="col-lg-6 pieChart">
                 <canvas id="myChart" width="400" height="400"></canvas>
-                <div class="mt-5 countDown">
-                    <div class="ml-5 pt-4 alignOnly">
-                        <img src="./images/count.png" alt="">
-                        <h2 class=" sectionText--mid textIsBlue mb-0 ml-2">Public Sale Countdown</h2>
-                    </div>
-
-                    <div class="mt-3 center">
-                        <h2 id="days" class="sectionHead textIsBlue">
-                        </h2>
-                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Days</h3>
-                        <h2 id='hours' class="sectionHead textIsBlue ml-3">
-                        </h2>
-                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Hrs</h3>
-                        <h2 id='min' class="sectionHead textIsBlue ml-3">
-                        </h2>
-                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Mins</h3>
-                        <h2 id='sec' class="sectionHead textIsBlue ml-3">
-                        </h2>
-                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Secs</h3>
-                    </div>
-                </div>
             </div>
                 <div class="col-lg-6">
                     <div class="px-lg-5">
@@ -467,7 +446,31 @@
                         </div>
                     </div>
                 </div>
+               
             </div>
+            <div class='row'>
+                <div class=" col-lg-6 mt-5 countDown">
+                    <div class="ml-5 pt-4 alignOnly">
+                        <img src="./images/count.png" alt="">
+                        <h2 class=" sectionText--mid textIsBlue mb-0 ml-2">Public Sale Countdown</h2>
+                    </div>
+
+                    <div class="mt-3 center">
+                        <h2 id="days" class="sectionHead textIsBlue">
+                        </h2>
+                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Days</h3>
+                        <h2 id='hours' class="sectionHead textIsBlue ml-3">
+                        </h2>
+                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Hrs</h3>
+                        <h2 id='min' class="sectionHead textIsBlue ml-3">
+                        </h2>
+                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Mins</h3>
+                        <h2 id='sec' class="sectionHead textIsBlue ml-3">
+                        </h2>
+                        <h3 class='textIsGray ml-2 sectionText--midlevel'>Secs</h3>
+                    </div>
+                </div>
+                </div>
         </div>
     </div>
 </section>
@@ -500,7 +503,7 @@
 <section class="sectionHeight globe  alignOnly">
     <div class="w-100">
         <div class="row no-gutters">
-            <div class="col-lg-6 center bgMap--light sectionHeight">
+            <div class="col-lg-6 center globeImage bgMap--light sectionHeight">
                 <img src="./images/globe.png" class="img" alt="" data-aos="fade-up">
             </div>
             <div class="col-lg-6 sectionHeight alignOnly bgBlue">
@@ -588,8 +591,7 @@
     </div>
 </section>
 
-<section class="mockup sectionHeight alignOnly">
-    <img src="./images/mapBg.png" class="bgImg" alt="">
+<section class="mockup bgMap--light sectionHeight alignOnly">
     <div class="container">
         <div
             id="carouselExampleControls"
@@ -598,7 +600,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row w-100">
-                        <div class="col-lg-6 alignOnly sectionHeight--short">
+                        <div class="col-lg-6 alignOnly my-5 ">
                             <div class="textHolder" style="padding: .2rem;">
                                 <p class="sectionText mb-1">API Integration</p>
                                 <h2 class="sectionHead textIsBlue textIsBold" style="line-height: 1.4;">
@@ -616,7 +618,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 sectionHeight--short alignOnly">
+                        <div class="col-lg-6 my-5 alignOnly">
                             <div class="imgHolder center w-100">
                                 <img src="./images/apiIntegration.png" class="w-100" alt="">
                             </div>
@@ -626,7 +628,7 @@
 
                 <div class="carousel-item">
                     <div class="row w-100">
-                        <div class="col-lg-6 alignOnly sectionHeight">
+                        <div class="col-lg-6 alignOnly my-5">
                             <div class="textHolder" style="padding: .2rem;">
                                 <p class="sectionText mb-1">Transfi Merchant App</p>
                                 <h2 class="sectionHead textIsBlue textIsBold" style="line-height: 1.4;">
@@ -640,29 +642,31 @@
                                     Feature on the Transfi Mobile App.
                                 </p>
 
-                                <div class="mt-5">
-                                    <p class='textIsBlue sectonText--mid'>Coming Soon on</p>
-                                    <button style='border-radius:10px'href="#" class=" transparentBtn">
-                                        Play Store
-                                    </button>
-                                    <button style='border-radius:10px' href="#" class="transparentBtn">
-                                        App Store
-                                    </button>
-                                       
-                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 sectionHeight alignOnly">
+                        <div class="col-lg-6 my-5 py-3 alignOnly">
                             <div class="imgHolder center w-100">
                                 <img src="./images/app.png" class="w-100" alt="">
                             </div>
+                        </div>
+                        <div class="col-lg-6 mt-5">
+                            <p class='textIsBlue sectonText--mid'>Coming Soon on</p>
+                            <button style='border-radius:10px'href="#" class=" mb-3 mb-md-0 transparentBtn">
+                                <img src="./images/googlePlayIcon.png" alt="">
+                                Play Store
+                            </button>
+                            <button style='border-radius:10px' href="#" class="transparentBtn">
+                                <img src="./images/appstoreIcon.png" alt="">
+                                App Store
+                            </button>
+                               
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="row w-100">
-                        <div class="col-lg-6 alignOnly sectionHeight">
+                        <div class="col-lg-6 alignOnly my-5">
                             <div class="textHolder" style="padding: .2rem;">
                                 <p class="sectionText mb-1">Card Services</p>
                                 <h2 class="sectionHead textIsBlue textIsBold" style="line-height: 1.4;">
@@ -680,7 +684,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 alignOnly">
+                        <div class="col-lg-6 my-5 alignOnly">
                             <div class="imgHolder center w-100">
                                 <img src="./images/cards.png" class="w-100" alt="">
                             </div>
@@ -821,15 +825,16 @@
                 </p>
 
                 <div class="alignOnly mBlock">
-                    <div class="mt-5 mx-2">
-                        <a href="./tokenomics.html" class="defaultBtn">View Tokenomics
-                            <i class="fas fa-arrow-right mx-1"></i>
+                    <div class="mt-4 mx-2">
+                        <a class="transparentBtn isClickable" type="button" data-toggle="modal" data-target="#waitingList" data-whatever="@mdo" >
+                            Join Waitlist
                         </a>
                     </div>
 
-                    <div class="mt-5 mx-2">
-                        <a href="./TRANSFI WHITE PAPER.pdf" class="defaultBtn" download>Read WhitePaper
-                            <i class="fas fa-download mx-1"></i>
+                    <div class="mt-4 mx-2">
+                        <a href="./TRANSFI WHITE PAPER.pdf" class="defaultBtn" download>
+                            <i style='color:#FFCC3E' class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            Read WhitePaper
                         </a>
                     </div>
                 </div>
@@ -847,7 +852,10 @@
         <div class='row'>
             <div class=col-md-6>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -857,7 +865,10 @@
             </div>
             <div class=col-md-6>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -867,7 +878,10 @@
             </div>
             <div class=col-md-6>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -877,7 +891,10 @@
             </div>
             <div class=col-md-6>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -888,7 +905,10 @@
             <div class=col-md-6>
                 <p>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 </p>
                 <div class="collapse" id="collapseExample">
@@ -900,7 +920,10 @@
             <div class=col-md-6>
                 <p>
                     <button class="btn my-3 py-3 questions lAlign" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      What is Transfi
+                        <div class='spaceBetween'>
+                            <p class="textIsBlue sectionText--mid">What is Transfi Protocol?</p>
+                            <i style='color:#FFCC3E' class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
                     </button>
                 </p>
                 <div class="collapse" id="collapseExample">
@@ -924,13 +947,13 @@
                         <p class="sectionText--mid textIsGray mt-2">Stay up to date with our Newsletter</p>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-3">
+                <div class="col-lg-7 mt-3">
                     <div class="">
-
                     <div id="mc_embed_signup">
                         <form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=2e1a3f47d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="row validate" target="_blank" novalidate>
-                            <input placeholder="E-mail address" type="email" value="" name="EMAIL" class="required col-lg-6 email" id="mce-EMAIL">
-                            <input type="submit" value="Join our mailing list" name="subscribe" id="mc-embedded-subscribe" class="col-lg-6 defaultBtn w-100 vAlign">
+                            
+                            <input placeholder="@example.com" type="email" value="" name="EMAIL" class="required col-lg-6 mt-3 mx-3 mt-md-0 mx-md-0 email" id="mce-EMAIL">
+                            <input type="submit" value="Subscribe to our Newsletter" name="subscribe" id="mc-embedded-subscribe" class="col-lg-6 mt-3 mx-3 mt-md-0 mx-md-0 defaultBtn vAlign">
                         </form>
                     </div>                   
                     </div>
