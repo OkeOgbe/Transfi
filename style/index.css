@@ -775,11 +775,16 @@ ul {
 
 .gif{
     box-shadow: 0 4px 10px 3px #C4C4C433;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin: 70px auto;
     background-color: #0096c72b;
+}
+
+.gif img{
+    border-radius:50%;
+    width:100%;
 }
 
 .countDown{
