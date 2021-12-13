@@ -787,6 +787,10 @@ ul {
     width:100%;
 }
 
+.mailGIF{
+    width:70%;
+}
+
 .countDown{
     background:#fff;
     margin-bottom:30px;
@@ -795,7 +799,7 @@ ul {
 
 @media (max-width: 768px) {
 
-    .globeImage{
+    .displayDesktopOnly{
         display:none;
     }
 

@@ -72,27 +72,22 @@ const myChart = new Chart(ctx, {
     type: 'pie',
     data: {
         labels: [
-            'Private investors', 
-            'Private Sale', 
-            'Pre-sale', 
-            'Airdrop Reward', 
-            'Strategic Partnership', 
-            'Marketing and Buyback',
-            'Team Token',
-            'Burn',
-            'Liquidity'
+            'Platform', 
+            'Seed, Private and Public Sale', 
+            'Team, Advisors and Development', 
+            'Liquidity and Exchange', 
+            'Marketing and Partnership', 
+            'Airdrop/community Bounty',
         ],
         datasets: [{
             label: 'Tokens',
-            data: [5, 
+            data: [ 
                 10, 
-                30, 
-                5, 
-                10, 
-                15,
-                10,
+                25, 
+                20, 
+                20, 
+                20,
                 5,
-                5 
                 ],
             backgroundColor: [
                 '#03C5FF',
@@ -101,9 +96,6 @@ const myChart = new Chart(ctx, {
                 '#FF3E72',
                 '#FF6B3E',
                 '#3E72FF',
-                '#AD00FE',
-                '#FF3E72',
-                'black'
             ],
             borderWidth: 1,
             weight:1,
