@@ -136,7 +136,6 @@ textarea {
 
 .sectionHead {
     font-size: 1.5rem;
-    line-height: 1.5;
 }
 
 .sectionHead--big {
@@ -694,7 +693,9 @@ ul {
     overflow: hidden;
 }
 
-
+.m-auto{
+    margin:0 auto;
+}
 
 @keyframes slide {
     0% {
@@ -802,6 +803,18 @@ ul {
     .displayDesktopOnly{
         display:none;
     }
+
+    .mobileGlobe{
+        padding:0.5rem;
+    }
+
+    .bgHero {
+        background-image: url('../images/mobileHerobg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
 
     .heroMarginTop{
         margin-top:40px;
@@ -949,19 +962,6 @@ ul {
 
 
 }
- .globe h2{
-     line-height: 2.5rem;
-     margin-bottom: 2.5rem;
- }
-
- .globe p{
-    line-height: 1.5rem;
- }
-
- .globe-textHolder{
-     padding-top: 5rem;
-     padding-left: 5rem;
- }
 
  .reasons-why{
      margin: 0;
