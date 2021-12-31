@@ -841,6 +841,7 @@ ul {
         text-align: center;
         border-radius: 10px;
         color: var(--defaultBlue);
+        width:80%;
     }
 
     .sectionHead--big {
