@@ -138,32 +138,46 @@ const myChart = new Chart(ctx, {
     }
 });
 
-/*
+
 const privateSaleBtn =  document.querySelector('.privateSaleBtn')
 const formFunc = async ()=>{
-    const type =  document.querySelector('#type').value
+    //const type =  document.querySelector('#type').value
     const firstName =  document.querySelector('#firstName').value
     const lastName =  document.querySelector('#lastName').value
     const email =  document.querySelector('#email').value
     document.querySelector('.privateSaleForm').style.display = 'none'
     document.querySelector('.privateSaleLoading').style.display = 'block'
-     const response = await fetch("https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=63b645c9e1", {
-        headers: { 'Content-Type': 'application/json',
-                    Accept:'application/json'
-                },
-                method:'POST',
-        body:JSON.stringify({
-            FNAME: firstName,
-            LNAME: lastName,
-            EMAIL: email
-        })    
-    })
-    if (response.ok){
-        const jsonResponse = await response.json()
-        document.querySelector('.privateSaleSuccess').innerHTML = jsonResponse.message
+
+    _scq.push(["identify",{ 
+    email: email, 
+    firstName: firstName, 
+    lastName: lastName,
+    tags: ["privateSales"],
+    success:()=>{
+        document.querySelector('.privateSaleSuccess').innerHTML = "Added to List"
         document.querySelector('.privateSaleLoading').style.display = 'none'
         document.querySelector('.privateSaleSuccess').style.display = 'block'
+        setTimeout(()=>{
+            document.querySelector('.privateSaleSuccess').style.display = 'none'
+            document.querySelector('.privateSaleForm').style.display = 'block'
+            document.querySelector('#firstName').value = ""
+            document.querySelector('#lastName').value = ""
+            document.querySelector('#email').value = ""
+        }, 1000)
+    },
+    failure:()=>{
+        document.querySelector('.privateSaleSuccess').innerHTML = "Not Added to List"
+        document.querySelector('.privateSaleLoading').style.display = 'none'
+        document.querySelector('.privateSaleSuccess').style.display = 'block'
+        setTimeout(()=>{
+            document.querySelector('.privateSaleSuccess').style.display = 'none'
+            document.querySelector('.privateSaleForm').style.display = 'block'
+            document.querySelector('#firstName').value = ""
+            document.querySelector('#lastName').value = ""
+            document.querySelector('#email').value = ""
+        }, 1000) 
     }
+    }]);
 }
 privateSaleBtn.onclick = formFunc;
 
@@ -172,23 +186,28 @@ const mailingListBtn =  document.querySelector('.mailingListBtn')
 const mailingFunc = async()=>{
     console.log('submitting')
     const email =  document.querySelector('#mailingMail').value
-    
-     const response = await fetch('https://api.transfi.net/api/user-list', {
-        headers: { 'Content-Type': 'application/json',
-                    Accept:'application/json'
-                },
-        method:'POST',
-        body:JSON.stringify({
-            type: 'mailing_list',
-            email: email
-        })    
-    })
-    if (response.ok){
-        const jsonResponse = await response.json()
-        document.querySelector('#mailingMail').style.display = 'none'
-        document.querySelector('.mailingListBtn').innerHTML = jsonResponse.message
-        document.querySelector('#mailingListBtn').style.width = '100%'
-    }
+    _scq.push(["identify",{ 
+        email: email, 
+        tags: ["mailingList"],
+        success:()=>{
+            document.querySelector('#mailingMail').style.display = 'none'
+            document.querySelector('.mailingListBtn').innerHTML = "Thanks for subcribing"
+            setTimeout(()=>{
+                document.querySelector('#mailingMail').style.display = 'block'
+                document.querySelector('#mailingMail').value = ""
+                document.querySelector('.mailingListBtn').innerHTML = "Subscribe to our Newsletter"
+            }, 1000)
+        },
+        failure:()=>{
+            document.querySelector('#mailingMail').style.display = 'none'
+            document.querySelector('.mailingListBtn').innerHTML = "Unable to subscribe"
+            setTimeout(()=>{
+                document.querySelector('#mailingMail').style.display = 'block'
+                document.querySelector('#mailingMail').value = ""
+                document.querySelector('.mailingListBtn').innerHTML = "Subscribe to our Newsletter"
+            }, 1000)
+        }
+    }])
 }
 mailingListBtn.onclick = mailingFunc;
 
@@ -198,25 +217,33 @@ const productFunc = async ()=>{
     const email =  document.querySelector('#productEmail').value
     document.querySelector('.productForm').style.display = 'none'
     document.querySelector('.productLoading').style.display = 'block'
-     const response = await fetch('https://api.transfi.net/api/user-list', {
-        headers: { 'Content-Type': 'application/json',
-                    Accept:'application/json'
-                },
-        method:'POST',
-        body:JSON.stringify({
-            type:'product_waiting_list',
-            email: email
-        })    
-    })
-    if (response.ok){
-        const jsonResponse = await response.json()
-        document.querySelector('.productSuccess').innerHTML = jsonResponse.message
-        document.querySelector('.productLoading').style.display = 'none'
-        document.querySelector('.productSuccess').style.display = 'block'
-    }
+    _scq.push(["identify",{ 
+        email: email, 
+        tags: ["productsWaitingList"],
+        success:()=>{
+            document.querySelector('.productSuccess').innerHTML = "added to list"
+            document.querySelector('.productLoading').style.display = 'none'
+            document.querySelector('.productSuccess').style.display = 'block'
+            setTimeout(()=>{
+                document.querySelector('.productSuccess').style.display = 'none'
+                document.querySelector('.productForm').style.display = 'block'
+                document.querySelector('#productEmail').value = ""
+            }, 1000)
+        },
+        failure:()=>{
+            document.querySelector('.productSuccess').innerHTML = "Not addded to list"
+            document.querySelector('.productLoading').style.display = 'none'
+            document.querySelector('.productSuccess').style.display = 'block'
+            setTimeout(()=>{
+                document.querySelector('.productSuccess').style.display = 'none'
+                document.querySelector('.productForm').style.display = 'block'
+                document.querySelector('#productEmail').value = ""
+            }, 1000)
+        }
+        }]);
 }
 productBtn.onclick = productFunc;
-*/
+
 
 
 

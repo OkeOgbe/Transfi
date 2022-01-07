@@ -124,125 +124,69 @@
                 </div>
             </div>
 
-<!--
-            <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content ">
-                    <div class="modal-body center mx-2">
-                        <a href='https://t.me/TRANSFI_OFFICIAL' class="defaultBtn w-100 ">join Our Telegram Community</a>
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+                        </button>
+                        <a class="defaultBtn privateSaleLoading w-100 " style="display:none">Adding to List</a>
+                        <a class="defaultBtn privateSaleSuccess w-100 " style="display:none"></a>
+                        <form class='privateSaleForm'>
+                            <input type="hidden" name='type' value='private_sale' class="form-control emailInput" id="type" required>
+                        <div class="form-group">
+                            <label for="firstName" class="col-form-label textIsBlue">First Name:</label>
+                            <input type="text"  name='first_name' class="form-control emailInput" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="col-form-label textIsBlue">Last Name:</label>
+                            <input type="text"  name='last_name' class="form-control emailInput" id="lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label textIsBlue">Email:</label>
+                            <input type="email"  name='email' class="form-control emailInput" id="email" required>
+                        </div>
+                        <button type="button" class="privateSaleBtn defaultBtn w-100">Join Private Sales</button>
+                        </form>
                     </div>
-                  </div>
+                    </div>
                 </div>
-            </div>
--->
-            
-            
-             
-            
-<div class="modal fade" id="privateSales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-       <div class="modal-body">
-        <button type='button' class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true defaultBtn textIsBlue">&times</span>
-          </button>
-           <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-        <form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=63b645c9e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"novalidate>
-        <div id="mc_embed_signup_scroll">
-        
-        <div class="mc-field-group">
-        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-        </label>
-        <input type="email" value="" name="EMAIL" class="emailInput form-control required email" id="mce-EMAIL">
-        </div>
-        <div class="mc-field-group">
-        <label for="mce-FNAME">First Name </label>
-        <input type="text" value="" name="FNAME" class="emailInput form-control" id="mce-FNAME">
-        </div>
-        <div class="mc-field-group">
-        <label for="mce-LNAME">Last Name </label>
-        <input type="text" value="" name="LNAME" class="emailInput form-control" id="mce-LNAME">
-</div>
-    <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e918fbfa2a2d22f779e8eb70_63b645c9e1" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Join Private Sales" name="subscribe" id="mc-embedded-subscribe" class="defaultBtn mt-2"></div>
-    </div>
-</form>
-</div>
+                </div>
+    
+                <div class="modal fade" id="waitingList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true defaultBtn textIsBlue">&times</span>
+                            </button>
+                            <a class="defaultBtn productLoading w-100" style="display:none">Adding to List</a>
+                        <a class="defaultBtn productSuccess w-100 " style="display:none"></a>
+                        <form class = "productForm">
+                            <div class="form-group">
+                            <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
+                            <input type="email" class="form-control emailInput" id="productEmail">
+                            </div>
+                            <button type="button" class="defaultBtn productBtn w-100">Join Waiting List</button>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
 
-<!--End mc_embed_signup-->
-           <!--
-          <a class="defaultBtn privateSaleLoading w-100 " style="display:none">Adding to List</a>
-          <a class="defaultBtn privateSaleSuccess w-100 " style="display:none"></a>
-        <form class='privateSaleForm'>
-            <input type="hidden" name='type' value='private_sale' class="form-control emailInput" id="type" required>
-          <div class="form-group">
-            <label for="firstName" class="col-form-label textIsBlue">First Name:</label>
-            <input type="text"  name='first_name' class="form-control emailInput" id="firstName">
-          </div>
-          <div class="form-group">
-            <label for="lastName" class="col-form-label textIsBlue">Last Name:</label>
-            <input type="text"  name='last_name' class="form-control emailInput" id="lastName">
-          </div>
-          <div class="form-group">
-            <label for="email" class="col-form-label textIsBlue">Email:</label>
-            <input type="email"  name='email' class="form-control emailInput" id="email" required>
-          </div>
-          <button type="button" class="privateSaleBtn defaultBtn w-100">Join Private Sales</button>
-        </form>
-    -->
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="waitingList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true defaultBtn textIsBlue">&times</span>
-            </button>
-            <!-- Begin Mailchimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="https://transfi.us20.list-manage.com/subscribe/post?u=3e918fbfa2a2d22f779e8eb70&amp;id=ec6b53dfa8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-<div class="mc-field-group">
-    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-    <input type="email" value="" name="EMAIL" class="emailInput form-control required email" id="mce-EMAIL">
-</div>
-    <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e918fbfa2a2d22f779e8eb70_ec6b53dfa8" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Get updates on our products" name="subscribe" id="mc-embedded-subscribe" class="button defaultBtn mt-3"></div>
-    </div>
-</form>
-</div>
 
-<!--End mc_embed_signup-->
-            <!--
-            <a class="defaultBtn productLoading w-100" style="display:none">Adding to List</a>
-          <a class="defaultBtn productSuccess w-100 " style="display:none"></a>
-          <form class = "productForm">
-            <div class="form-group">
-              <label for="recipient-name" class="col-form-label textIsBlue">Email:</label>
-              <input type="email" class="form-control emailInput" id="productEmail">
-            </div>
-            <button type="button" class="defaultBtn productBtn w-100">Join Waiting List</button>
-          </form>
-      -->
-        </div>
-      </div>
-    </div>
-  </div>
-            
+
+
+
+
+
+
+
+     
             
 
 
@@ -582,6 +526,20 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript">
+            var _scq = _scq || [];
+            var _scs = _scs || {};
+            _scs.teamId = "4D1eHR1UkA7UkM79l4XS0d";
+        
+            (function() {
+            var dc = document.createElement('script');
+            dc.type = 'text/javascript';
+            dc.async = true;
+            dc.src = '//cdn.sendx.io/prod/4D1eHR1UkA7UkM79l4XS0d.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(dc, s);
+            })();
+        </script>
         <script src='./assets/js/jquery.min.js'></script>
         <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
         <script src="./assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
@@ -590,7 +548,7 @@
         <script>
             AOS.init();
         </script>
-        <script src='./js/index.js'></script>
+        <script src='./js/airdrop.js'></script>
         <script src="/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="https://kit.fontawesome.com/8ae44b1393.js" crossorigin="anonymous"></script>
     </body>
