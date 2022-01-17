@@ -236,10 +236,10 @@ const productFunc = async ()=>{
             document.querySelector('.productSuccess').style.display = 'block'
             setTimeout(()=>{
                 document.querySelector('.productSuccess').style.display = 'none'
+                document.querySelector('#productEmail').value = ''
                 document.querySelector('.productForm').style.display = 'block'
-                document.querySelector('#productEmail').value = ""
             }, 1000)
-        }
+        },
         }]);
 }
 productBtn.onclick = productFunc;

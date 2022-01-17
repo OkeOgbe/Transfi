@@ -165,7 +165,9 @@ textarea {
 .heroMarginTop{
     margin-top:110px;
 }
-
+.nav{
+    background:rgba(0, 0, 0, 0.2)
+}
 .nav.fixed,
 .nav__mobile.fixed {
     position: fixed;
@@ -173,6 +175,7 @@ textarea {
     width: 100%;
     z-index: 999;
     box-shadow: 0 5px 15px 0 #eae1e17a;
+    
 }
 
 .nav__mobile {
@@ -364,9 +367,10 @@ ul {
 .transparentBtn {
     background: transparent;
     border: 1px solid var(--defaultBlue);
-    padding: 0.7rem 3rem;
+    padding: 1rem 2rem;
     text-align: center;
     color: var(--defaultBlue);
+    border-radius: 10px;
 }
 
 .transparentBtn1 {
