@@ -84,8 +84,8 @@ const myChart = new Chart(ctx, {
             data: [ 
                 10, 
                 25, 
-                20, 
-                20, 
+                15, 
+                25, 
                 20,
                 5,
                 ],
